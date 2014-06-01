@@ -131,15 +131,18 @@ nav ul li{
 .l-header__top__nav ul{
 	border-left: 1px solid #000;
 	border-right: 1px solid #393b3d;
+	margin-top: 1.3em;
 }
 
 .l-header__top__nav li{
 	border-left: 1px solid #393b3d;
-	border-right: 1px solid #000
+	border-right: 1px solid #000;
+	padding: 11px 0px;
 }
 
 .l-header__top__nav li a{
 	font-size: 22px;
+	padding: 11px;;
 }
 
 }
