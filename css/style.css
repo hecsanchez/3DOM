@@ -97,6 +97,7 @@ a{
     NAV
 \*------------------------------------*/
 
+<<<<<<< HEAD
 nav ul{
 	margin-bottom: 0;
 	margin-top: 0;
@@ -106,16 +107,40 @@ nav ul{
 
 nav li{
 	list-style: none;
+=======
+nav li{
+	list-style: none;
+}
+
+.main-nav ul{
+	margin-bottom: 0;
+	margin-top: 0;
+	padding-left: 0;
+	border-left: 1px solid #df4f49;
+}
+
+.main-nav li{
+>>>>>>> FETCH_HEAD
 	padding-top: 5em;
 	padding-bottom: .82em;
 }
 
+<<<<<<< HEAD
 nav li a {
 	border-right: 1px solid #fff;
+=======
+.main-nav li a {
+	border-right: 1px solid #df4f49;
+>>>>>>> FETCH_HEAD
 	padding: 5em 1.5em .8em;
 }
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> FETCH_HEAD
 /*------------------------------------*\
     HEADINGS
 \*------------------------------------*/
@@ -145,6 +170,7 @@ h3{
 /*------------------------------------*\
     SMALL PRINT
 \*------------------------------------*/
+<<<<<<< HEAD
 
 
 /*------------------------------------*\
@@ -157,6 +183,20 @@ h3{
 \*------------------------------------*/
 
 
+=======
+
+
+/*------------------------------------*\
+    LISTS
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+	GLOBAL
+\*------------------------------------*/
+
+
+>>>>>>> FETCH_HEAD
 
 .gs-container{
 	width: 95%;
