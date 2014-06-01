@@ -98,6 +98,7 @@ a{
 \*------------------------------------*/
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 nav ul{
 	margin-bottom: 0;
 	margin-top: 0;
@@ -113,18 +114,27 @@ nav li{
 }
 
 .main-nav ul{
+=======
+nav ul{
+>>>>>>> parent of 8ac4eaa... fixed
 	margin-bottom: 0;
 	margin-top: 0;
 	padding-left: 0;
-	border-left: 1px solid #df4f49;
+	border-left: 1px solid #fff;
 }
 
+<<<<<<< HEAD
 .main-nav li{
 >>>>>>> FETCH_HEAD
+=======
+nav li{
+	list-style: none;
+>>>>>>> parent of 8ac4eaa... fixed
 	padding-top: 5em;
 	padding-bottom: .82em;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 nav li a {
 	border-right: 1px solid #fff;
@@ -132,15 +142,22 @@ nav li a {
 .main-nav li a {
 	border-right: 1px solid #df4f49;
 >>>>>>> FETCH_HEAD
+=======
+nav li a {
+	border-right: 1px solid #fff;
+>>>>>>> parent of 8ac4eaa... fixed
 	padding: 5em 1.5em .8em;
 }
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> FETCH_HEAD
+=======
+>>>>>>> parent of 8ac4eaa... fixed
 /*------------------------------------*\
     HEADINGS
 \*------------------------------------*/
