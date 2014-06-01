@@ -99,6 +99,7 @@ a{
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 nav ul{
 	margin-bottom: 0;
 	margin-top: 0;
@@ -117,6 +118,9 @@ nav li{
 =======
 nav ul{
 >>>>>>> parent of 8ac4eaa... fixed
+=======
+nav ul{
+>>>>>>> parent of 8ac4eaa... fixed
 	margin-bottom: 0;
 	margin-top: 0;
 	padding-left: 0;
@@ -124,8 +128,13 @@ nav ul{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .main-nav li{
 >>>>>>> FETCH_HEAD
+=======
+nav li{
+	list-style: none;
+>>>>>>> parent of 8ac4eaa... fixed
 =======
 nav li{
 	list-style: none;
@@ -134,6 +143,7 @@ nav li{
 	padding-bottom: .82em;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 nav li a {
@@ -146,16 +156,23 @@ nav li a {
 nav li a {
 	border-right: 1px solid #fff;
 >>>>>>> parent of 8ac4eaa... fixed
+=======
+nav li a {
+	border-right: 1px solid #fff;
+>>>>>>> parent of 8ac4eaa... fixed
 	padding: 5em 1.5em .8em;
 }
 
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> FETCH_HEAD
+=======
+>>>>>>> parent of 8ac4eaa... fixed
 =======
 >>>>>>> parent of 8ac4eaa... fixed
 /*------------------------------------*\
