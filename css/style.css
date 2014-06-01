@@ -228,7 +228,7 @@ h3{
 
 	.l-header__top{
 		background: url(../img/headerTopBg.png) repeat;
-		padding: 1em;
+		padding: 1em 1em 0;
 	}
 
 	.l-header__nav{
@@ -241,3 +241,74 @@ h3{
 	background-image: -ms-linear-gradient( 90deg, rgba(0,0,0,0.4) 0%, rgba(102,98,112,0.4) 50%, rgba(76,74,87,0.4) 100%);
 }
 
+.l-header__top__quote {
+	border: 1px solid #d9251c;
+	height: 40px;
+	cursor: pointer;
+	width: 260px;
+	margin-top: 1.6em;
+}
+
+.quote-select {
+	text-transform: uppercase;
+	padding: .7em;
+	background: #202025;
+	text-align: right;
+}
+
+.quote-dropdown {
+	display: none;
+	transition: all .3s ease;
+	background: #202025;
+	z-index: 2;
+	position: relative;
+	width: 366px;
+	margin-left: -6.7em;
+	border: 1px solid #d9251c;
+	text-align: left;
+}
+
+.quote-select:hover ~ .quote-dropdown{
+	display: block;
+}
+
+.featured-single {
+	width: 32%;
+	max-width: 300px;
+}
+
+.featured-single__img img{
+	max-width: 100%;
+}
+
+.dot-bg{
+	background: url(../img/dotbg.png) repeat;
+	opacity: .6;
+	display: block;
+	width: 100%;
+	height: 409px;
+	margin-top: -413px;
+	position: relative;
+}
+
+.featured-single__content{
+	width: 100%;
+	height: 396px;
+	margin-top: -409px;
+	position: relative;
+	background: rgba(0,0,0,.5);
+	padding-top: .8em;
+	border-top: 3px solid #797b7f;
+}
+
+.featured-single__content h2 {
+	background: rgba(0,0,0,.7);
+	width: 65%;
+	padding: .8em 1em .8em .5em;
+}
+
+.featured-single__content p{
+	font-size: 12px;
+	width: 92%;
+	margin: 50% auto 0;
+}
