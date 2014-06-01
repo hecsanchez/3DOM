@@ -1,0 +1,121 @@
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+
+/**
+ * NORMALIZE...........normalize.css
+ * CLEARFIX............
+ * MAIN................High-level elements like `html`, `body`, etc.
+ * GLOBAL..............
+ *
+ * GRIDS...............Fluid, proportional and nestable grids
+ * FLEXBOX.............Crudely emulate flexbox
+ * COLUMNS.............CSS3 columns
+ * NAV.................A simple abstraction to put a list in horizontal nav mode
+ * BREADCRUMBS..........Simple breadcrumb trail object
+ *
+ * HEADINGS............Double-stranded heading hierarchy
+ * PARAGRAPHS..........
+ * SMALLPRINT..........Smaller text elements like `small`
+ * LISTS...............
+ * IMAGES..............
+ * TABLES..............
+ * FORMS...............
+ *
+ */
+
+
+/*------------------------------------*\
+    NORMALIZE
+\*------------------------------------*/
+
+@import url('normalize.css');
+
+/*------------------------------------*\
+    CLEARFIX
+\*------------------------------------*/
+.u-cf:after, .u-cf:before {
+content: '';
+display: table;
+}
+
+.u-cf:after {
+clear: both;
+}
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+html{
+
+}
+
+body{
+	background: #000;
+	color: #fff;
+}
+
+header{
+
+}
+
+section{
+
+}
+
+footer{
+
+}
+
+/*------------------------------------*\
+    HEADINGS
+\*------------------------------------*/
+
+h1, h2, h3, h4, h5, h6{
+
+}
+
+h1{
+
+}
+
+h2{
+
+}
+
+h3{
+
+}
+
+
+/*------------------------------------*\
+
+\*------------------------------------*/
+
+
+.gs-container{
+	width: 95%;
+	max-width: 960px;
+	margin: auto;
+}
+
+ .l-header{
+ 	background: #212120;
+ }
+
+	.l-header__top{
+		background: url(../img/headerTopBg.png) repeat;
+		padding: 1em;
+	}
+
+	.l-header__nav{
+		background: #d9251c;
+	}
+
+.l-main{
+	background-image: -moz-linear-gradient( 90deg, rgba(0,0,0,0.4) 0%, rgba(102,98,112,0.4) 50%, rgba(76,74,87,0.4) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgba(0,0,0,0.4) 0%, rgba(102,98,112,0.4) 50%, rgba(76,74,87,0.4) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgba(0,0,0,0.4) 0%, rgba(102,98,112,0.4) 50%, rgba(76,74,87,0.4) 100%);
+}
+
