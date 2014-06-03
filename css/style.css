@@ -221,6 +221,7 @@ h3{
 .button{
 	background-color: #d9251c;
 	padding: 10px 30px; 
+	line-height: 100px;
 }
 
 /*------------------------------------*\
@@ -324,4 +325,14 @@ h3{
 	font-size: 12px;
 	width: 92%;
 	margin: 50% auto 0;
+}
+
+.non-featured__single {
+	width: 32%;
+	max-height: 285px;
+	max-width: 300px;
+}
+
+.blog-header, .blog-link{
+	color: #cc241c;
 }
