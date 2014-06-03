@@ -336,3 +336,31 @@ h3{
 .blog-header, .blog-link{
 	color: #cc241c;
 }
+
+.non-featured-single__content {
+	height: 290px;
+	margin-top: -250px;
+	position: relative;
+	padding-top: .8em;
+}
+
+
+.dot-gallery {
+		background: url(../img/dotbg.png) repeat;
+	opacity: .6;
+	display: block;
+	width: 100%;
+	height: 291px;
+	width: 620px;
+	margin-top: -295px;
+	position: relative;
+}
+
+.section-non-featured {
+	margin-top: 30px;
+}
+
+.section--logos{
+	background-color: #1a1a1a;
+	padding: 15px 0px;
+}
