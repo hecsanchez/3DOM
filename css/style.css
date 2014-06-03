@@ -93,6 +93,11 @@ a{
 	justify-content: space-between;
 }
 
+.social-media-fb {
+	display: flex;
+	justify-content: center;
+}
+
 /*------------------------------------*\
     COLUMNS
 \*------------------------------------*/
@@ -171,6 +176,13 @@ h3{
 
 }
 
+/*------------------------------------*\
+    ICONS
+\*------------------------------------*/
+
+.social-media a{
+	background-color: d9251c;
+}
 
 /*------------------------------------*\
     PARAGRAPHS
