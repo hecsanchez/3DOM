@@ -98,6 +98,14 @@ a{
 	justify-content: center;
 }
 
+.footer-fb {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-fb:first-child {
+	margin-right: auto;
+}
 /*------------------------------------*\
     COLUMNS
 \*------------------------------------*/
@@ -150,6 +158,9 @@ nav ul li{
 	padding: 11px;;
 }
 
+.footer-nav ul li{
+	display: inline-block;
+	text-align: right;
 }
 
 /*------------------------------------*\
@@ -229,9 +240,15 @@ h3{
 }
 
 .social-media a{
-	background-color: #d9251c;
+	
 }
 
+.social-media-fb a {
+	width: 180px;
+	padding: 3em 4.5em;
+	background: #d9251c;
+	border-right: 1px solid #000;
+}
 /*------------------------------------*\
     PARAGRAPHS
 \*------------------------------------*/
@@ -413,9 +430,4 @@ h3{
 	padding: 15px 0px;
 }
 
-.social-media-fb a {
-	width: 180px;
-	padding: 3em 4.5em;
-	background: #d9251c;
-	border-right: 1px solid #000;
-}
+
