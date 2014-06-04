@@ -553,6 +553,20 @@ footer{
 .top-title-red{
 	color: #d9251c;
 }
+
+.pricing-featured {
+	background: #d9251c;
+	border: 2px solid #3b3a3a;
+	-moz-column-count: 3;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 3;
+ 	  -webkit-column-gap : 20px;
+}
+
+.packages {
+	background: #202025;
+	border: 2px solid #3b3a3a;
+}
 /*------------------------------------*\
     OVERLAY
 \*------------------------------------*/
