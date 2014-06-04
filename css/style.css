@@ -153,6 +153,8 @@ nav ul li{
 	color: #424445;
 }
 
+}
+
 .footer-nav {
 	float: right;
 	margin-right: 5px;
@@ -171,6 +173,10 @@ nav ul li{
 	margin: 8px;
 }
 
+.sub-nav ul li ul{
+	display: none;
+	position: absolute;
+	background: #d9251c;
 }
 /*------------------------------------*\
     BREADCRUMBS
@@ -277,6 +283,29 @@ h3{
     IMAGES
 \*------------------------------------*/
 
+.small-img, .big-img {
+	width: 50%;
+}
+
+.small-img1 {
+	margin: 0px 10px 10px 0px;
+}
+
+.small-img2 {
+	margin: 0px 5px 10px 10px;
+}
+
+.small-img3 {
+	margin: 10px 10px 0px 0px;
+}
+
+.small-img4 {
+	margin: 10px 5px 0px 10px;
+}
+
+.big-img-first {
+	margin-right: 10px;
+}
 
 /*------------------------------------*\
     TABLES
