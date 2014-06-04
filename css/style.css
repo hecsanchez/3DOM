@@ -106,6 +106,11 @@ a{
 .footer-fb:first-child {
 	margin-right: auto;
 }
+
+.footer-copy-fb {
+	display: flex;
+	justify-content: space-between;
+}
 /*------------------------------------*\
     COLUMNS
 \*------------------------------------*/
@@ -480,3 +485,6 @@ footer{
 	background-color: #474747;
 }
 
+.footer-copy-fb, .footer-copy-fb a {
+	color: #7e7e7e;
+} 
