@@ -499,10 +499,12 @@ footer{
 
 .hot-pr-btn {
 	position: absolute;
-	margin: 90px 0px  0px 75px;
+	margin-top: 80%;
+	margin-left: 65%;
 	height: 40px;
 	width: 40px;
 	padding: 0px 0px;
+	z-index: 3;
 }
 /*------------------------------------*\
     OVERLAY
