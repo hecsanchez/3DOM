@@ -308,6 +308,10 @@ section{
 	margin-top: 30px;
 }
 
+.slider{
+	height: 480px;
+}
+
  .l-header{
  	background: #212120;
  }
@@ -445,6 +449,17 @@ margin: .3em 0;
 }
 
 .highlight p {
+font-size: 12px;
+}
+
+.section--blog h2{
+	width: 26%;
+	max-width: 243px;
+	background: #9d9d9d;
+	padding: .5em 0 .5em .3em;
+}
+
+.blog-single {
 font-size: 12px;
 }
 
