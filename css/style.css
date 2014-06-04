@@ -98,11 +98,6 @@ a{
 	justify-content: center;
 }
 
-.footer-fb {
-	display: flex;
-	justify-content: space-between;
-}
-
 
 .footer-copy-fb {
 	display: flex;
@@ -160,11 +155,22 @@ nav ul li{
 	padding: 11px;;
 }
 
+.footer-nav {
+	float: right;
+	margin-right: 5px;
+}
 .footer-nav ul li{
 	display: inline-block;
 	text-align: right;
 }
 
+.footer-nav ul{
+	font-size: .75em;
+}
+
+.footer-nav a {
+	color: #787878;
+	margin: 8px;
 }
 
 /*------------------------------------*\
@@ -393,6 +399,7 @@ section{
 	border-top: 3px solid #797b7f;
 }
 
+
 .featured-single__content h2 {
 	background: rgba(0,0,0,.7);
 	width: 65%;
@@ -478,13 +485,14 @@ footer{
 	background: #373737;
 }
 
-.footer-nav ul{
-	font-size: .75em;
+.footer-red {
+	height: 65px;
+	width: 80px;
+	background-color: #d9251c;
 }
 
-.footer-nav a {
-	color: #787878;
-	margin: 8px;
+.footer-red, .footer-logo, .footer-nav {
+	display: inline-block;
 }
 
 .footer-fb {
@@ -511,6 +519,22 @@ footer{
 	width: 40px;
 	padding: 0px 0px;
 	z-index: 3;
+}
+
+.grey-bg {
+	background: #202025;
+	border: 2px solid #3b3a3a;
+}
+
+.top-content-box {
+	margin: 25px 20px;
+}
+
+.top-title {
+	font-size: 1.25em;
+}
+.top-title-red{
+	color: #d9251c;
 }
 /*------------------------------------*\
     OVERLAY
@@ -584,5 +608,6 @@ a#overlaylaunch-inAbox {
     background-color: #b90900;
     color: #fff;
 }
+
 
 
