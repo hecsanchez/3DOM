@@ -173,6 +173,7 @@ nav ul li{
 	margin: 8px;
 }
 
+}
 /*------------------------------------*\
     BREADCRUMBS
 \*------------------------------------*/
@@ -389,14 +390,32 @@ section{
 	position: relative;
 }
 
+.dot-service{
+	background: url(../img/dotbg.png) repeat;
+	opacity: .6;
+	display: block;
+	width: 100%;
+	height: 609px;
+	margin-top: -609px;
+	position: relative;
+}
+
 .featured-single__content{
 	width: 100%;
-	height: 396px;
-	margin-top: -409px;
 	position: relative;
 	background: rgba(0,0,0,.5);
 	padding-top: .8em;
 	border-top: 3px solid #797b7f;
+}
+
+.featured-single__content--home{
+	height: 396px;
+	margin-top: -409px;
+}
+
+.featured-single__content--service{
+	height: 596px;
+	margin-top: -612px;
 }
 
 
@@ -609,5 +628,10 @@ a#overlaylaunch-inAbox {
     color: #fff;
 }
 
+
+.service-single__img{
+	height: 609px;
+	background: #111111;
+}
 
 
