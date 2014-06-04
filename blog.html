@@ -7,16 +7,17 @@
 	    <link href='http://fonts.googleapis.com/css?' rel='stylesheet' type='text/css'>
 	    <link rel="stylesheet" href="css/style.css">
 	    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	    <script type="text/javascript" src="js/custom.js"></script>
+	    <!-- Add fancyBox -->
+		<link rel="stylesheet" href="/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+					<script type="text/javascript">
+				$(document).ready(function() {
+					$(".fancybox").fancybox();
+				});
+			</script>
 	  </head>
 
 	  <body>
-	  	<div id="overlay-inAbox" class="overlay">
-		    <div class="toolbar"><a class="close" href="#"><span>x</span> close</a></div>
-		    <div class="wrapper">
-		        Hello! I'm in a box.
-		    </div>
-		</div>
 	  	<header class="l-header u-cf">
 			<div class="l-header__top u-cf">
 				<div class="gs-container fb">
@@ -63,7 +64,7 @@
 			          <li><a href="blog.html">Blog</a></li>
 			          <li><a href="contact.html">Contact</a></li>
 			          <li><a href="shop.html">Shop</a></li>
-			          <li><a href="#" id="overlaylaunch-inAbox">My Account</a></li>
+			          <li><a class="various" data-fancybox-type="iframe" href="sign-in.html">My Account</a></li>
 			        </ul>
 			      </nav>
 			  </div>
@@ -250,7 +251,7 @@
 				          <li><a href="blog.html">Blog</a></li>
 				          <li><a href="contact.html" >Contact</a></li>
 				          <li><a href="shop.html">Shop</a></li>
-				          <li><a href="account.html">My Account</a></li>
+				          <li><a class="various" data-fancybox-type="iframe" href="account.html">My Account</a></li>
 				        </ul>
 			      	</nav>
 				<div>
@@ -264,6 +265,7 @@
 					<p><a href="#">Site design Quilo</a></p>
 				</div>
 			</div>
+
 		</footer>
 	</body>
 </html>
