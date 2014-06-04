@@ -103,9 +103,6 @@ a{
 	justify-content: space-between;
 }
 
-.footer-fb:first-child {
-	margin-right: auto;
-}
 
 .footer-copy-fb {
 	display: flex;
@@ -479,6 +476,15 @@ font-size: 12px;
 
 footer{
 	background: #373737;
+}
+
+.footer-nav ul{
+	font-size: .75em;
+}
+
+.footer-nav a {
+	color: #787878;
+	margin: 8px;
 }
 
 .footer-fb {
