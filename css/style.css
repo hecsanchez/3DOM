@@ -489,6 +489,21 @@ footer{
 	color: #7e7e7e;
 } 
 
+.product-single {
+	position: relative;
+}
+
+.product-single img {
+	margin-top: 15px;
+}
+
+.hot-pr-btn {
+	position: absolute;
+	margin: 90px 0px  0px 75px;
+	height: 40px;
+	width: 40px;
+	padding: 0px 0px;
+}
 /*------------------------------------*\
     OVERLAY
 \*------------------------------------*/
