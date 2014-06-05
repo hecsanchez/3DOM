@@ -77,3 +77,20 @@
 	min-height: 150px;
 	background: url(AjaxLoader.gif) no-repeat center center
 }
+
+
+
+
+.slide-section__left, .slide-section__right {
+	display: inline-block;
+	width: 49.8%;
+	vertical-align: top;
+}
+
+.slide-section__right img{
+	max-width: 100%;
+}
+
+.button--slider{
+	padding: 2% 30px 2% 50%;
+}
