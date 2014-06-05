@@ -88,7 +88,9 @@
 }
 
 .slide-section__right img{
-	max-width: 100%;
+	margin-left: -30%;
+	z-index: 1;
+	position: relative;
 }
 
 .button--slider{
@@ -97,4 +99,17 @@
 
 .slider{
 	background: #141414;
+}
+
+.slide--over {
+position: relative;
+margin-top: -37.7%;
+float: right;
+}
+
+.slide--over img {
+position: relative;
+display: inline;
+margin-left: -15em;
+opacity: .5;
 }
