@@ -611,10 +611,15 @@ footer{
 .pricing-featured {
 	background: #d9251c;
 	border: 2px solid #3b3a3a;
+	padding: 3px 20px;
+
+}
+
+.column {
 	-moz-column-count: 3;
     -moz-column-gap: 20px;
     -webkit-column-count: 3;
- 	  -webkit-column-gap : 20px;
+ 	-webkit-column-gap : 20px;
 }
 
 .packages {
