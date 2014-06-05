@@ -155,6 +155,31 @@ nav ul li{
 
 }
 
+.sub-nav {
+	display: none;
+	position: absolute;
+	background: #D9251C;
+	margin-top: 13px;
+	margin-left: -2px;
+	width: 140px;
+}
+
+.sub-nav li {
+padding: 1em 0;
+border-bottom: 1px solid #DF4F49;
+}
+
+.main-nav li:hover>ul {
+display: block;
+}
+
+.sub-nav li a {
+padding: 1em 2em 1em 1em;
+border-right: 0;
+width: 100%;
+position: relative;
+}
+
 .footer-nav {
 	float: right;
 	margin-right: 5px;
