@@ -308,29 +308,36 @@ h3{
     IMAGES
 \*------------------------------------*/
 
-.small-img, .big-img {
+.gallery{
+	margin-top: 0;
+}
+
+.gallery img{
+	margin: 10px;
+}
+
+.gallery__featured {
 	width: 50%;
+	display: inline-block;
 }
 
-.small-img1 {
-	margin: 0px 10px 10px 0px;
+	.gallery__featured--right{
+		margin-right: 10px;
+	}
+
+.gallery__grid {
+	flex-wrap: wrap;
+	width: 51%;
+	display: inline-block;
 }
 
-.small-img2 {
-	margin: 0px 5px 10px 10px;
-}
+	.gallery__grid--left, .gallery__featured--left{
+		margin-left: -10px;
+	}
 
-.small-img3 {
-	margin: 10px 10px 0px 0px;
-}
-
-.small-img4 {
-	margin: 10px 5px 0px 10px;
-}
-
-.big-img-first {
-	margin-right: 10px;
-}
+	.gallery__grid--right {
+		margin-right: -12px;
+	}
 
 /*------------------------------------*\
     TABLES
