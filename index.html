@@ -5,9 +5,12 @@
 	    <title>3DOM Wraps</title>
 	    <link href='http://fonts.googleapis.com/css?' rel='stylesheet' type='text/css'>
 	    <link rel="stylesheet" href="css/style.css">
+	    <link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	    <link rel="stylesheet" href="css/owl.carousel.css">
+	    <link rel="stylesheet" href="css/owl.theme.css">
 	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-	<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<script type="text/javascript" src="js/owl.carousel.js"></script>
 	  </head>
 	<body>
 			<header class="l-header u-cf">
@@ -75,14 +78,36 @@
 			<div>
 		</header>
 		<div class="l-main u-cf">
-			<section class="slider u-cf">
-				<h1>Vinyl Wrapping.</h1>
-				<div class="">
-					<p>Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue nulla. Sed luctus orci in blandit hendrerit. Praesent lacinia sapien at est semper semper. Mauris sagittis ipsum in erat pretium, quis tempor purus luctus.</p>
+			<section class="owl-carousel slider u-cf" id="slider">
+				<div class="item slide">
+					<div class="slide-section slide-section__left">
+						<h1>Vinyl Wrapping.</h1>
+						<div class="">
+							<p>Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue nulla. Sed luctus orci in blandit hendrerit. Praesent lacinia sapien at est semper semper. Mauris sagittis ipsum in erat pretium, quis tempor purus luctus.</p>
+						</div>
+						<div class="">
+							<a class="button" href="#">Discover more</a>
+						</div>
+					</div>
+					<div class="slide-section slide-section__right">
+						<img class="" src="img/slideimg1.png">
+					</div>
 				</div>
-				<div class="">
-					<a class="button" href="#">Discover more</a>
+				<div class="item slide">
+					<div class="slide-section slide-section__left">
+						<h1>Vinyl Wrapping.</h1>
+						<div class="">
+							<p>Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue nulla. Sed luctus orci in blandit hendrerit. Praesent lacinia sapien at est semper semper. Mauris sagittis ipsum in erat pretium, quis tempor purus luctus.</p>
+						</div>
+						<div class="">
+							<a class="button" href="#">Discover more</a>
+						</div>
+					</div>
+					<div class="slide-section slide-section__right">
+						<img class="" src="img/slideimg2.png">
+					</div>
 				</div>
+
 			</section><!-- End section-slider -->
 			<section class="gs-container section--featured fb">
 				<div class="featured-single one-third">
@@ -268,6 +293,16 @@
 				openEffect	: 'none',
 				closeEffect	: 'none'
 			});
+		});
+		</script>
+		<script>
+		$(document).ready(function() {
+		  $("#slider").owlCarousel({
+		  	navigation : true, // Show next and prev buttons
+		    slideSpeed : 300,
+		    paginationSpeed : 400,
+		    singleItem:true
+		  });
 		});
 		</script>
 	</body>
