@@ -2,11 +2,13 @@
 <html>
 	<head>
 	  	<meta charset="utf-8">
-	    <title>Get a Quote| 3DOM Wraps</title>
-	    <link rel="stylesheet" href="css/normalize.css">
+	    <title>3DOM Wraps</title>
 	    <link href='http://fonts.googleapis.com/css?' rel='stylesheet' type='text/css'>
 	    <link rel="stylesheet" href="css/style.css">
-	</head>
+	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+	  </head>
 	<body>
 			<header class="l-header u-cf">
 			<div class="l-header__top u-cf">
@@ -66,7 +68,7 @@
 						        <li><a href="shop.html">Artwork</a>
 			          		</ul>
 			          </li>
-			          <li><a href="account.html">My Account</a></li>
+			          <li><a class="various" data-fancybox-type="iframe" href="sign-in.html">My Account</a></li>
 			        </ul>
 			      </nav>
 			  </div>
@@ -186,5 +188,20 @@
 					<p><a href="#">Site design Quilo</a></p>
 				</div>
 		</footer>
+		<script>
+		$(document).ready(function() {
+			$(".various").fancybox({
+				maxWidth	: 800,
+				maxHeight	: 600,
+				fitToView	: false,
+				width		: '70%',
+				height		: '70%',
+				autoSize	: false,
+				closeClick	: false,
+				openEffect	: 'none',
+				closeEffect	: 'none'
+			});
+		});
+		</script>
 	</body>	
 </html>
