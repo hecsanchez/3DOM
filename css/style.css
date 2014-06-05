@@ -716,4 +716,10 @@ a#overlaylaunch-inAbox {
 	background: #111111;
 }
 
+.recent-blog-single {
+	margin: 8px;
+}
 
+.latest-blog-single {
+	margin: 9px;
+}
