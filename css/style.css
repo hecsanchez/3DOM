@@ -162,6 +162,7 @@ nav ul li{
 	margin-top: 13px;
 	margin-left: -2px;
 	width: 140px;
+	z-index: 2;
 }
 
 .sub-nav li {
