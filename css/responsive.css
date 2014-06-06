@@ -59,12 +59,40 @@ height: 460px;
     FLEXBOX
 \*------------------------------------*/
 
-}
+
 /*------------------------------------*\
     COLUMNS
 \*------------------------------------*/
 
+.non-featured-single__content {
+margin-top: -307px;
+}
 
+.featured-single:after, .non-featured__single:after {
+    content: '';
+    width: 0;
+    border-top: 0px solid #E71C1C;
+    border-left: 0px solid rgba(0, 0, 0, 0);
+    border-bottom: 12px solid rgba(0, 0, 0, 0);
+    font-size: 0;
+    line-height: 0;
+    margin-top: 0px;
+    position: absolute;
+}
+
+.featured-single:after, .non-featured__single.one-third:after{
+    border-right: 300px solid #E71C1C;
+}
+
+.non-featured__single.two-thirds:after{
+    border-right: 620px solid #E71C1C;
+}
+
+.non-featured__single.two-thirds {
+    width: 65%;
+    max-width: 620px;
+    max-height: 290px;
+}
 /*------------------------------------*\
     NAV
 \*------------------------------------*/
