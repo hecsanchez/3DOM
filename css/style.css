@@ -370,16 +370,16 @@ input, select, .submit{
 
 }
 
-textarea {
+.contact-form1 textarea {
 	height: 235px;
 	width: 575px;
 }
 
-label, textarea {
+.contact-form1 label, textarea {
 	margin-left: -20px;
 }
 
-input, textarea, select {
+.contact-form1 input, textarea, select {
 	background-color: #29272d;
 	border: 2px solid #3b3a3a; 
 	margin-right: 20px;
@@ -685,6 +685,26 @@ footer{
 .cs-text {
 	width: 50%;
 }
+
+.service-single__img{
+	height: 609px;
+	background: #111111;
+}
+
+.recent-blog-single {
+	width: 22.8%;
+}
+
+.latest-blog-single {
+	width: 47.8%;
+}
+
+.main-article {
+	max-width: 75%;
+	border: 2px solid #3b3a3a; 
+	margin-right: 5px;
+}
+
 /*------------------------------------*\
     OVERLAY
 \*------------------------------------*/
@@ -759,17 +779,5 @@ a#overlaylaunch-inAbox {
 }
 
 
-.service-single__img{
-	height: 609px;
-	background: #111111;
-}
-
-.recent-blog-single {
-	width: 22.8%;
-}
-
-.latest-blog-single {
-	width: 47.8%;
-}
 
 
