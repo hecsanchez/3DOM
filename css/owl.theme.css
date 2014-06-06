@@ -3,8 +3,11 @@
 *	v1.3.3
 */
 
-.owl-theme .owl-controls{
+.slider.owl-theme .owl-controls{
 	margin-top: -35px;
+}
+
+.owl-theme .owl-controls{
 	text-align: center;
 	position: relative;
 }
