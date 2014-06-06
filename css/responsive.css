@@ -37,13 +37,18 @@
     GRIDS
 \*------------------------------------*/
 
-section.owl-carousel{
+section.slider{
 	max-width: 1282px;
 	margin: auto;
 }
 
+.section--featured {
+height: 460px;
+}
+
 .featured-single{
 	width: 100%;
+    margin: 10px;
 }
 
 .featured .owl-item{
