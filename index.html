@@ -5,6 +5,7 @@
 	    <title>3DOM Wraps</title>
 	    <link href='http://fonts.googleapis.com/css?' rel='stylesheet' type='text/css'>
 	    <link rel="stylesheet" href="css/style.css">
+	    <link rel="stylesheet" href="css/responsive.css">
 	    <link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 	    <link rel="stylesheet" href="css/owl.carousel.css">
 	    <link rel="stylesheet" href="css/owl.theme.css">
@@ -117,49 +118,62 @@
 				<img class="slide--over__four" src="img/stripe4.png">
 				<img class="slide--over__five" src="img/stripeslines.png">
 			</div> -->
-			<section class="gs-container section--featured fb">
-				<div class="featured-single one-third">
-					<div class="featured-single__img">
-						<img src="img/sponsorship.jpg" alt="">
-					</div>
-					<div class="dot-bg"></div><!-- Dots -->
-					<div class="featured-single__content featured-single__content--home">
-						<h2>Sponsorship</h2>
-						<div class="">
-							<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue .</p>
-						</div>
-						<div class="">
-							<a class="button" href="#">Read more</a>
-						</div>
-					</div>
-				</div>
-				<div class="featured-single one-third">
-					
+			<section id="featured" class="gs-container section--featured fb owl-carousel">
+					<div class="featured-single one-third">
 						<div class="featured-single__img">
-							<img src="img/design.jpg" alt="">
+							<img src="img/sponsorship.jpg" alt="">
 						</div>
 						<div class="dot-bg"></div><!-- Dots -->
 						<div class="featured-single__content featured-single__content--home">
-							<h2>Design</h2>
+							<h2>Sponsorship</h2>
+							<div class="">
 								<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue .</p>
+							</div>
 							<div class="">
 								<a class="button" href="#">Read more</a>
 							</div>
 						</div>
-				</div>
-				<div class="featured-single one-third">
-						<div class="featured-single__img">
-							<img src="img/services.jpg" alt="">
-						</div>
-						<div class="dot-bg"></div><!-- Dots -->
-						<div class="featured-single__content featured-single__content--home">
-							<h2>Services</h2>
-								<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue .</p>
-							<div class="">
-								<a class="button" href="#">Read more</a>
+					</div>
+					<div class="featured-single one-third">
+						
+							<div class="featured-single__img">
+								<img src="img/design.jpg" alt="">
 							</div>
-						</div>
-				</div>
+							<div class="dot-bg"></div><!-- Dots -->
+							<div class="featured-single__content featured-single__content--home">
+								<h2>Design</h2>
+									<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue .</p>
+								<div class="">
+									<a class="button" href="#">Read more</a>
+								</div>
+							</div>
+					</div>
+					<div class="featured-single one-third">
+							<div class="featured-single__img">
+								<img src="img/services.jpg" alt="">
+							</div>
+							<div class="dot-bg"></div><!-- Dots -->
+							<div class="featured-single__content featured-single__content--home">
+								<h2>Services</h2>
+									<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue .</p>
+								<div class="">
+									<a class="button" href="#">Read more</a>
+								</div>
+							</div>
+					</div>
+					<div class="featured-single one-third">
+							<div class="featured-single__img">
+								<img src="img/services.jpg" alt="">
+							</div>
+							<div class="dot-bg"></div><!-- Dots -->
+							<div class="featured-single__content featured-single__content--home">
+								<h2>Services</h2>
+									<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue .</p>
+								<div class="">
+									<a class="button" href="#">Read more</a>
+								</div>
+							</div>
+					</div>
 			</section><!-- End section-featured -->
 			<section class="gs-container section-non-featured fb">
 				<div class="non-featured__single two-thirds">
@@ -310,7 +324,19 @@
 		  owl.owlCarousel({
 		    singleItem:true,
 		    autoPlay : true,
-		    transitionStyle : "fadeUp"
+		    transitionStyle : "fadeUp",
+		    responsive : true
+		  });
+		});
+		$(document).ready(function() {
+		  var owl = $("#featured");
+
+		  owl.owlCarousel({
+		     items : 3, //10 items above 1000px browser width
+		      itemsDesktop : [1000,3], //5 items between 1000px and 901px
+		      itemsDesktopSmall : false, // betweem 900px and 601px
+		      itemsTablet: [600,2], //2 items between 600 and 0
+		      itemsMobile : [300, 1] // itemsMobile disabled - inherit from itemsTablet option
 		  });
 		});
 		</script>

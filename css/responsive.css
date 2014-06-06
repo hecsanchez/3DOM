@@ -1,0 +1,95 @@
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+
+/**
+ * NORMALIZE...........normalize.css
+ * CLEARFIX............
+ * MAIN................High-level elements like `html`, `body`, etc.
+ * GLOBAL..............
+ *
+ * GRIDS...............Fluid, proportional and nestable grids
+ * FLEXBOX.............Crudely emulate flexbox
+ * COLUMNS.............CSS3 columns
+ * NAV.................A simple abstraction to put a list in horizontal nav mode
+ * BREADCRUMBS..........Simple breadcrumb trail object
+ *
+ * HEADINGS............Double-stranded heading hierarchy
+ * PARAGRAPHS..........
+ * SMALLPRINT..........Smaller text elements like `small`
+ * LISTS...............
+ * IMAGES..............
+ * TABLES..............
+ * FORMS...............
+ * BUTTONS.............
+ *
+ */
+
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+
+
+
+/*------------------------------------*\
+    GRIDS
+\*------------------------------------*/
+
+section.owl-carousel{
+	max-width: 1282px;
+	margin: auto;
+}
+
+.featured-single{
+	width: 100%;
+}
+
+.featured .owl-item{
+	
+}
+
+/*------------------------------------*\
+    FLEXBOX
+\*------------------------------------*/
+
+}
+/*------------------------------------*\
+    COLUMNS
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+    NAV
+\*------------------------------------*/
+
+}
+/*------------------------------------*\
+    BREADCRUMBS
+\*------------------------------------*/
+
+/*------------------------------------*\
+    HEADINGS
+\*------------------------------------*/
+
+h1, h2, h3, h4, h5, h6{
+
+}
+
+h1{
+
+}
+
+h2{
+
+}
+
+h3{
+
+}
+
+/*------------------------------------*\
+    ICONS
+\*------------------------------------*/
+
