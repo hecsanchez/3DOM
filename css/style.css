@@ -363,7 +363,7 @@ h3{
 	height: 40px;
 }
 
-input, select, .submit{
+.contact-form1 input, .contact-form1 select, .submit{
 	float: right;
 	height: 35px;
 	width: 300px;
@@ -375,11 +375,11 @@ input, select, .submit{
 	width: 575px;
 }
 
-.contact-form1 label, textarea {
+.contact-form1 label, .contact-form1 textarea {
 	margin-left: -20px;
 }
 
-.contact-form1 input, textarea, select {
+.contact-form1 input, .contact-form1 textarea, .contact-form1 select {
 	background-color: #29272d;
 	border: 2px solid #3b3a3a; 
 	margin-right: 20px;
@@ -705,6 +705,9 @@ footer{
 	margin-right: 5px;
 }
 
+.a-quote {
+	max-width: 50%;
+}
 /*------------------------------------*\
     OVERLAY
 \*------------------------------------*/
