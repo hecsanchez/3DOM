@@ -349,6 +349,53 @@ h3{
     FORMS
 \*------------------------------------*/
 
+.contact-form1{
+	height: 810px;
+	width: 620px;
+}
+
+.contact-form1 ul {
+	list-style: none;
+}
+
+.contact-form1 ul li {
+	margin-bottom: 20px;
+	height: 40px;
+}
+
+input, select, .submit{
+	float: right;
+	height: 35px;
+	width: 300px;
+
+}
+
+textarea {
+	height: 235px;
+	width: 575px;
+}
+
+label, textarea {
+	margin-left: -20px;
+}
+
+input, textarea, select {
+	background-color: #29272d;
+	border: 2px solid #3b3a3a; 
+	margin-right: 20px;
+}
+
+.submit {
+	background-color: #d9251c;
+	margin-top: 220px;
+}
+.contact-form2 {
+	width: 300px;
+}
+
+.contact-info {
+	color: #d9251c;
+}
 
 /*------------------------------------*\
     BUTTONS
