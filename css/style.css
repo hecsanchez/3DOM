@@ -256,8 +256,15 @@ h3{
 
 }
 
-.main-heading{
-	font-size: 52px;
+@media screen and (min-width: 1005px) {
+
+	.slide__heading{
+		font-size: 52px;
+		display: block;
+		width: 83%;
+		text-align: right;
+		border-bottom: 1px solid #3F3F3F;
+	}
 }
 
 /*------------------------------------*\
@@ -501,7 +508,7 @@ section{
 
 .quote-select {
 	text-transform: uppercase;
-	padding: .7em;
+	padding: .5em;
 	background: #202025;
 	text-align: right;
 }
@@ -597,6 +604,7 @@ section{
 	background: rgba(0,0,0,.7);
 	width: 65%;
 	padding: .8em 1em .8em .5em;
+	font-weight: 300;
 }
 
 .featured__single__content p{
@@ -818,7 +826,7 @@ footer{
 	}
 
 	.featured__single:after, .non-featured__single.one-third:after{
-	    border-right: 300px solid #E71C1C;
+	    border-right: 299px solid #E71C1C;
 	}
 
 	.non-featured__single.two-thirds:after{
@@ -1084,6 +1092,7 @@ a#overlaylaunch-inAbox {
 	position: relative;
 	z-index: 3;
 	width: 95%;
+	padding-top: 4%;
 }
 
 .slide-section__right {
