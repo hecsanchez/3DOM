@@ -27,21 +27,23 @@ display: inline-block;
 vertical-align: top;
 }
 
-.l-header__top__navicon {
-float: right;
-font-size: 1.5em;
+.l-header__top__logo img{
+  width: 70%;
 }
 
-.l-header__top__navicon a {
-background: #D9251C;
-display: block;
-width: 40px;
-height: 36px;
-text-align: center;
-border: 1px solid #D9251C;
-border-radius: 5px;
-position: relative;
+.l-header__top__navicon {
+float: right;
+font-size: 1.2em;
+font-weight: 300;
+padding-top: .5em;
 }
+
+.l-header__top__nav {
+  margin-top: -1em;
+  margin-bottom: 1em;
+}
+
+
 
 /*
 	jQuery.mmenu CSS
