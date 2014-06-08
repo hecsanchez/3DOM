@@ -12,10 +12,49 @@
 	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
 		<script type="text/javascript" src="js/owl.carousel.js"></script>
+		<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
+
 	  </head>
 	<body>
+		<div>
 			<header class="l-header u-cf">
 			<div class="l-header__top u-cf">
+				<nav id="nav" class="mobile-nav">
+			        <ul class="fb">
+			          <li class="selected"><a href="index.html">Home</a></li>
+			          <li><a href="services.html">Services</a></li>
+			          <li><a href="gallery.html">Gallery</a></li>
+			          <li><a href="case-studies.html" >Case Studies</a></li>
+			          <li><a href="pricing.html">Pricing</a></li>
+			          <li><a href="blog.html">Blog</a></li>
+			          <li><a href="contact.html">Contact</a></li>
+			          <li><a href="shop.html">Shop</a>
+			          		<ul class="sub-nav">
+			          			<li><a href="index.html">Bikes</a></li>
+						        <li><a href="services.html">Cars & Vans</a></li>
+						        <li><a href="gallery.html">Helmets</a></li>
+						        <li><a href="case-studies.html" >Car Care</a></li>
+						        <li><a href="pricing.html">Motorsport</a></li>
+						        <li><a href="blog.html">Apparel</a></li>
+						        <li><a href="contact.html">Gift Cards</a></li>
+						        <li><a href="shop.html">Wall Vinyl</a>
+						        <li><a href="shop.html">Artwork</a>
+			          		</ul>
+			          	</li>
+			          	<li><a class="various" data-fancybox-type="iframe" href="sign-in.html">My Account</a></li>
+			          	<li><a href="#">Get a quote</a>
+			          		<ul>
+								<li>Vinyl Wrapping</li>
+								<li>Paint Protections</li>
+								<li>Vehicle detailing</li>
+								<li>Motorsport Transport</li>
+								<li>UK</li>
+								<li>US</li>
+								<li>AUS</li>
+							</ul>
+						</li>  
+			        </ul>
+			      </nav>
 				<div class="gs-container fb">
 					<div class="l-header__top__logo">
 						<a href="index.html" class="logo"><img src="img/logo.png"></a>
@@ -29,6 +68,7 @@
 			        		</ul>
 						<nav>
 					</div>
+					<a href="#nav">Open the menu</a>
 					<div class="l-header__top__quote">
 						<div class="quote-select">Get a quote<i></i></div>
 						<div class="quote-dropdown">
@@ -52,7 +92,7 @@
 				<div class="gs-container">
 					<nav class="main-nav">
 			        <ul class="fb">
-			          <li><a href="index.html">Home</a></li>
+			          <li class="selected"><a href="index.html">Home</a></li>
 			          <li><a href="services.html">Services</a></li>
 			          <li><a href="gallery.html">Gallery</a></li>
 			          <li><a href="case-studies.html" >Case Studies</a></li>
@@ -339,7 +379,14 @@
 		    owl.trigger('owl.prev');
 		  })
 		});
-
 		</script>
+		<script type="text/javascript">
+			$(function() {
+				$('nav#nav').mmenu({
+					position : "right"
+				});
+			});
+		</script>
+	</div>
 	</body>
 </html>
