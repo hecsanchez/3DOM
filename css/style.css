@@ -419,7 +419,7 @@ img{
 	height: 40px;
 }
 
-.contact-form1 input, .contact-form1 select, .submit{
+.contact-form1 input, .contact-form1 select, .submit {
 	float: right;
 	height: 35px;
 	width: 300px;
@@ -453,6 +453,28 @@ img{
 	color: #d9251c;
 }
 
+.booking-form ul li {
+	list-style: none;
+}
+
+.booking-form input, .booking-form select, .booking-submit {
+	float: right;
+	height: 25px;
+	width: 243px;
+}
+
+.booking-form textarea {
+	float: right;
+	height: 150px;
+}
+
+.date {
+	width: 70px;
+}
+
+.booking-submit {
+	background-color: #d9251c;
+}
 /*------------------------------------*\
     BUTTONS
 \*------------------------------------*/
@@ -874,6 +896,17 @@ footer{
 
 .shop-text {
 	max-width: 50%;
+}
+
+.about-booking {
+	max-width: 46%;
+	margin-right: 10px;
+	padding: 30px 5px 3px 15px;
+}
+
+.booking-form {
+	padding: 15px;
+	margin-left: 10px;
 }
 /*------------------------------------*\
     OVERLAY
