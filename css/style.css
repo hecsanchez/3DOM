@@ -871,6 +871,10 @@ footer{
 	background-color: #d9251c;
 	font-size: 18px;
 }
+
+.shop-text {
+	max-width: 30%;
+}
 /*------------------------------------*\
     OVERLAY
 \*------------------------------------*/
