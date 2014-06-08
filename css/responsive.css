@@ -1,85 +1,18 @@
-/*------------------------------------*\
-    $CONTENTS
-\*------------------------------------*/
 
-/**
- * NORMALIZE...........normalize.css
- * CLEARFIX............
- * MAIN................High-level elements like `html`, `body`, etc.
- * GLOBAL..............
- *
- * GRIDS...............Fluid, proportional and nestable grids
- * FLEXBOX.............Crudely emulate flexbox
- * COLUMNS.............CSS3 columns
- * NAV.................A simple abstraction to put a list in horizontal nav mode
- * BREADCRUMBS..........Simple breadcrumb trail object
- *
- * HEADINGS............Double-stranded heading hierarchy
- * PARAGRAPHS..........
- * SMALLPRINT..........Smaller text elements like `small`
- * LISTS...............
- * IMAGES..............
- * TABLES..............
- * FORMS...............
- * BUTTONS.............
- *
- */
-
-
-/*------------------------------------*\
-    MAIN
-\*------------------------------------*/
-
-
-
-
-/*------------------------------------*\
-    GRIDS
-\*------------------------------------*/
-
-
-/*------------------------------------*\
-    FLEXBOX
-\*------------------------------------*/
-
-
-/*------------------------------------*\
-    COLUMNS
-\*------------------------------------*/
-
-
-
-
-/*------------------------------------*\
-    NAV
-\*------------------------------------*/
-
-}
-/*------------------------------------*\
-    BREADCRUMBS
-\*------------------------------------*/
-
-/*------------------------------------*\
-    HEADINGS
-\*------------------------------------*/
-
-h1, h2, h3, h4, h5, h6{
-
+.slider{
+	margin-bottom: 60px;
 }
 
-h1{
-
+.slider:after {
+content: "";
+position: absolute;
+z-index: 0;
+top: 100%;
+bottom: 0;
+width: 120%;
+height: 104px;
+left: -10%;
+right: -10%;
+background: -webkit-radial-gradient(50% -3%, ellipse cover, rgba(0, 0, 0, 0.5), rgba(97, 97, 97, 0) 40%);
+background: radial-gradient(ellipse at 50% -3%, #000, rgba(97, 97, 97, 0) 50%);
 }
-
-h2{
-
-}
-
-h3{
-
-}
-
-/*------------------------------------*\
-    ICONS
-\*------------------------------------*/
-
