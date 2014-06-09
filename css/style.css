@@ -856,6 +856,10 @@ footer{
 	color: #d9251c;
 }
 
+.how-to {
+	text-align: center;
+}
+
 @media screen and (min-width: 1005px){
 
 	.featured__single {
