@@ -542,6 +542,22 @@ img{
 legend {
 	font-size: 26px;
 }
+
+.sign-in-text {
+	height: 30px;
+	width: 300px;
+	margin-bottom: 20px;
+	background-color: #29272d;
+}
+
+.sign-in-submit {
+	height: 35px;
+	width: 306px;
+	margin-left: 110px;
+	background-color: #d9251c;
+
+}
+
 /*------------------------------------*\
     BUTTONS
 \*------------------------------------*/
