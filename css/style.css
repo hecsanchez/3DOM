@@ -140,10 +140,6 @@ p {
 	justify-content: space-between;
 }
 
-.last-ranges-fb {
-	display: flex;
-	justify-content: flex-start;
-}
 /*------------------------------------*\
     COLUMNS
 \*------------------------------------*/
@@ -828,6 +824,9 @@ footer{
 
 .grey-bg2{
 	background: #222426;
+}
+
+.ranges-details {
 	width: 23%;
 	margin: 0 1.2em 2em 0em;
 }
@@ -1026,6 +1025,10 @@ float: right;
 
 .pop-up-bg {
 	background-color: #202025;
+}
+
+.services-wwd {
+	max-width: 30%;
 }
 /*------------------------------------*\
     OVERLAY
