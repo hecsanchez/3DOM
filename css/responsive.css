@@ -1874,6 +1874,175 @@ background: transparent;
 border-top: 3px solid #d9251c;
 }
 
+.section--logos i{
+  display: block;
+  transition: all .3s ease;
+}
+
+.capsicum{
+  background: url(../img/sponsor1.png) no-repeat;
+  width: 98px;
+  height: 87px;
+}
+
+.capsicum:hover{
+  background: url(../img/capsicum.png) no-repeat;
+}
+
+.letsrace{
+  background: url(../img/sponsor2.png) no-repeat;
+  width: 174px;
+  height: 82px;
+}
+
+.letsrace:hover{
+  background: url(../img/lets-race.png) no-repeat;
+}
+
+.carling{
+  background: url(../img/sponsor3.png) no-repeat;
+  width: 195px;
+  height: 82px;
+}
+
+.carling:hover{
+  background: url(../img/carling.png) no-repeat;
+}
+
+.oz-racing{
+  background: url(../img/sponsor4.png) no-repeat;
+  width: 200px;
+  height: 82px;
+}
+
+.oz-racing:hover{
+  background: url(../img/oz-racing.png) no-repeat;
+}
+
+.quote-select {
+text-transform: uppercase;
+padding: 0.55em;
+background: #202025;
+text-align: right;
+}
+
+.arrow-down {
+background: #D9251C url(../img/arrow-down.png) no-repeat;
+background-position: 50% 50%;
+height: 42px;
+width: 42px;
+display: inline-block;
+z-index: 5;
+top: -9px;
+right: -9px;
+position: relative;
+float: right;
+}
+
+.quote-dropdown{
+  padding: 1em;
+  margin-left: -9.9em;
+}
+
+.quote-dropdown .nb, .quote-dropdown .nl{
+  font-size: 18px;
+}
+
+.quote-dropdown ul{
+  padding-left: 0;
+  list-style: none;
+}
+
+.quote-dropdown li {
+  border-bottom: 1px solid #FFF;
+  padding: .6em 0 .4em;
+}
+
+.quote-dropdown li:hover {
+  background: #FFF;
+}
+
+.quote-dropdown li:hover > a{
+  color: #D9251C;
+}
+
+.quote-dropdown li a {
+background: url(../img/arrow-right-hover.png) no-repeat;
+background-position: 91%;
+background-size: 10px;
+padding-right: 2em;
+}
+
+.quote-dropdown .geo li{
+  border-bottom: none;
+  padding: 0 .5em;
+}
+
+.quote-dropdown .geo li a{
+  background: none;
+  padding-right: 0;
+  color: #D9251C;
+}
+
+.quote-dropdown .geo .usa{
+  border-left: 1px solid #D9251C;
+  border-right: 1px solid #D9251C;
+}
+
+.geo.fb {
+justify-content: flex-start;
+}
+
+.button--slider:after {
+content: '';
+width: 0;
+border-top: 49px solid #D9251C;
+border-left: 0 solid rgba(0, 0, 0, 0);
+border-bottom: 11px solid rgba(0, 0, 0, 0);
+border-right: 31px solid rgba(0, 0, 0, 0);
+font-size: 0;
+line-height: 0;
+margin-top: -11px;
+margin-left: 32px;
+position: absolute;
+}
+
+.button--slider:hover:hover:after{
+  transition: all .3s ease;
+  border-top: 49px solid #fff;
+border-left: 0 solid rgba(0, 0, 0, 0);
+border-bottom: 11px solid rgba(0, 0, 0, 0);
+border-right: 31px solid rgba(0, 0, 0, 0);
+}
+
+.footer-red {
+height: 65px;
+width: 80px;
+background-color: #D9251C;
+border-top: 1px solid #DD3B33;
+margin-top: -1px;
+}
+
+.footer-red:after {
+content: '';
+width: 0;
+border-top: 13px solid rgba(0, 0, 0, 0);
+border-left: 12px solid #D9251C;
+border-bottom: 13px solid rgba(0, 0, 0, 0);
+border-right: 0px solid rgba(0, 0, 0, 0);
+font-size: 0;
+line-height: 0;
+margin-top: 13px;
+margin-left: 80px;
+position: absolute;
+}
+
+.footer-fb {
+background-color: #474747;
+height: 65px;
+border-top: 1px solid #5A5A5A;
+}
+
 
 @media screen and (min-width: 550px){
 
