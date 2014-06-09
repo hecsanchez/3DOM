@@ -857,6 +857,15 @@ footer{
 	max-width: 50%;
 }
 
+.b-number {
+	font-size: 270px;
+	color: #d9251c;
+}
+
+.how-to {
+	text-align: center;
+}
+
 @media screen and (min-width: 1005px){
 
 	.featured__single {
