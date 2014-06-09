@@ -91,42 +91,65 @@
 				<h2>About our quotes</h2>
 				<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue .Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non velit sit amet ante pellentesque egestas a id sapien. Nunc et posuere mi. Proin eget molestie ipsum. Curabitur eget dignissim est, eget venenatis tortor. Mauris molestie convallis mi, et posuere libero ultricies eget. Vestibulum et imperdiet libero.</p>
 			</div>
-			<div class="form grey-bg">
-				<legend>Create your quote</legend>
-				<label>Select service</label>
-			    		<select>
-			    			<option>A</option>
-			    			<option>B</option>
-			    			<option>C</option>
-			    			<option>D</option>
-			    			<option>E</option>
-			    		</select><br>
-		    	<form action="#" method="GET" name="">
-		    		<label>First Name</label>
-		    		<input type="text" name="name"><br>
-		    		<label>Second Name</label>
-		    		<input type="text" name="name"><br>
-		    		<label>Telephone number</label>
-		    		<input type="text" name="phone"><br>
-		    		<label>Email address</label>
-		    		<input type="text" name="email"><br>
-		    		<label>Postcode<br>Let us fins a supplier near you</label>
-		    		<input type="text" name="name"><br>
-		    		<label>Preferred date(s)</label>
-		    		<input type="datetime-local" name="time"><span>to</span><input type="datetime-local" name="time"><br>
-		    		<label>Service requirement</label>
-		    		<textarea name="message" rows="5" cols="25"></textarea><br>
-		    		<label>Select vehicle</label>
-			    		<select>
-			    			<option>A</option>
-			    			<option>B</option>
-			    			<option>C</option>
-			    			<option>D</option>
-			    			<option>E</option>
-			    		</select><br>
-			    	<input type="submit" value="Get a quote">
-		    	</form>
-			    </div>
+			<div class="form grey-bg booking-form">
+					<form action="#" method="GET" name="">
+					<legend>Create your quote</legend>
+					<p>Already a member?<a href="">Sign in</a> for a custom quote.Not a member?Want to sign up?<a href="">Click here</a>
+					<ul>
+						<li>
+							<label>Select service</label>
+					    		<select>
+					    			<option>A</option>
+					    			<option>B</option>
+					    			<option>C</option>
+					    			<option>D</option>
+					    			<option>E</option>
+					    		</select>
+						</li>
+						<li>
+		    				<label>First Name</label>
+		    				<input type="text" name="name">
+		    			</li>
+		    			<li>
+		    				<label>Second Name</label>
+		    				<input type="text" name="name">
+		    			</li>
+		    			<li>
+		    				<label>Phone number</label>
+		    				<input type="text" name="phone">
+		    			</li>
+		    			<li>
+		    				<label>Email address</label>
+		    				<input type="text" name="email">
+		    			</li>
+						<li class="postcode">
+				    		<label>Postcode<br>Let us find a supplier near you</label>
+				    		<input type="text" name="name">
+						</li>
+						<li>
+							<label>Preferred date(s)</label>
+				    		<input type="datetime-local" name="time" class="date"><span>to</span><input type="datetime-local" name="time" class="date">
+						</li>
+						<li class="booking-form-text">
+							<label>Service requirement</label>
+				    		<textarea name="message" rows="5" cols="25"></textarea>
+						</li>
+						<li>
+							<label>Select vehicle</label>
+					    		<select>
+					    			<option>A</option>
+					    			<option>B</option>
+					    			<option>C</option>
+					    			<option>D</option>
+					    			<option>E</option>
+					    		</select>
+						</li>
+						<li>
+					    	<input type="submit" value="Get a quote" class="booking-submit">
+				    	 </li> 
+					</ul>
+				</form>
+				</div>
 		</section>
 		<section class="gs-container section--hot-products dark-bg fb">
 				<div class="highlight">
@@ -180,8 +203,9 @@
 				</div>
 			</div>
 		</section>
-		<section class=" section--social-media">
-				<div class="gs-container social-media-fb">
+		<section class="section--blank"></section><!-- Empty div -->
+			<section class="section--social-media">
+				<div class="gs-container fb">
 					<a href="https://twitter.com/"><i class="icon-twitter"></i></a>
 					<a href="https://www.facebook.com/"><i class="icon-facebook"></i></a>
 					<a href="http://instagram.com/"><i class="icon-instagram"></i></a>

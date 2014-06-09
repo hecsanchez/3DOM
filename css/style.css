@@ -796,6 +796,10 @@ footer{
 	border: 2px solid #3b3a3a;
 }
 
+.grey-bg2{
+	background: #222426;
+}
+
 .top-content-box {
 	margin: 25px 20px;
 }
