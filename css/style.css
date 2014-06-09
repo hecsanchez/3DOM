@@ -134,6 +134,11 @@ p {
 	display: flex;
 	justify-content: space-between;
 }
+
+.last-ranges-fb {
+	display: flex;
+	justify-content: flex-start;
+}
 /*------------------------------------*\
     COLUMNS
 \*------------------------------------*/
