@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	  	<meta charset="utf-8">
+	  <meta charset="utf-8">
 	    <title>3DOM Wraps</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <link href='http://fonts.googleapis.com/css?' rel='stylesheet' type='text/css'>
 	    <link rel="stylesheet" href="css/style.css">
+	    <link rel="stylesheet" href="css/responsive.css">
+	    <link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	    <link rel="stylesheet" href="css/owl.transitions.css">
 	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-		<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<script type="text/javascript" src="js/owl.carousel.js"></script>
+		<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
 	  </head>
 	<body>
 			<header class="l-header u-cf">
@@ -79,18 +83,33 @@
 			<section class="owl-carousel slider u-cf" id="slider">
 				<div class="slide">
 					<div class="slide-section slide-section__left">
-						<h1 class="slide__heading  nl">Bikes</h1>
+						<h1 class="slide__heading  nl">Bikes.</h1>
 						<div class="slide__par">
 							<p>Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue nulla. Sed luctus orci in blandit hendrerit. Praesent lacinia sapien at est semper semper. Mauris sagittis ipsum in erat pretium, quis tempor purus luctus.</p>
 						</div>
 						<div class="slide__button">
-							<a class="button button--slider" href="#">View the full range</a>
+							<a class="button button--slider" href="#">Discover more</a>
 						</div>
 					</div>
 					<div class="slide-section slide-section__right">
-						<img class="" src="img/slideimg1.jpg">
+						<img class="" src="img/aprilla.jpg">
 					</div>
 				</div>
+				<div class="slide">
+					<div class="slide-section slide-section__left">
+						<h1 class="slide__heading nl">Vinyl Wrapping.</h1>
+						<div class="slide__par">
+							<p>Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue nulla. Sed luctus orci in blandit hendrerit. Praesent lacinia sapien at est semper semper. Mauris sagittis ipsum in erat pretium, quis tempor purus luctus.</p>
+						</div>
+						<div class="slide__button">
+							<a class="button button--slider" href="#">Discover more</a>
+						</div>
+					</div>
+					<div class="slide-section slide-section__right">
+						<img class="" src="img/slideimg2.jpg">
+					</div>
+				</div>
+			
 			</section><!-- End section-slider -->
 			<section class="gs-container">
 				<div class="fb">
@@ -300,6 +319,43 @@
 				closeEffect	: 'none'
 			});
 		});
+		</script>
+		<script>
+		$(document).ready(function() {
+		  var owl = $("#slider");
+
+		  owl.owlCarousel({
+		    singleItem:true,
+		    autoPlay : true,
+		    transitionStyle : "fadeUp",
+		    responsive : true
+		  });
+		});
+		$(document).ready(function() {
+		  var owl = $("#featured");
+
+		  owl.owlCarousel({
+		     items : 3, //10 items above 1000px browser width
+		      itemsDesktop : [1000,3], //5 items between 1000px and 901px
+		      itemsDesktopSmall : false, // betweem 900px and 601px
+		      itemsTablet: [600,2], //2 items between 600 and 0
+		      itemsMobile : [400, 1] // itemsMobile disabled - inherit from itemsTablet option
+		  });
+		  
+		  $(".next").click(function(){
+		    owl.trigger('owl.next');
+		  })
+		  $(".prev").click(function(){
+		    owl.trigger('owl.prev');
+		  })
+		});
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				$('nav#nav').mmenu({
+					position : "right"
+				});
+			});
 		</script>
 	 </body>
 </html>
