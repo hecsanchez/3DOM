@@ -1030,6 +1030,12 @@ float: right;
 .services-wwd {
 	max-width: 30%;
 }
+
+.images-case-studies, .article-case-studies{
+	max-width: 50%;
+}
+
+ 
 /*------------------------------------*\
     OVERLAY
 \*------------------------------------*/
