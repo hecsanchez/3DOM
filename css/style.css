@@ -127,6 +127,11 @@ p {
 	.fb--reverse{
 		flex-direction: row-reverse;
 	}
+
+	.fb--grid{
+		flex-wrap: wrap;
+		justify-content: flex-start !important;
+	}
 }
 
 
@@ -823,6 +828,8 @@ footer{
 
 .grey-bg2{
 	background: #222426;
+	width: 23%;
+	margin: 0 1.2em 2em 0em;
 }
 
 .top-content-box {
