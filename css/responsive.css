@@ -1939,10 +1939,6 @@ html.mm-opened.mm-black .mm-page {
 		display: block;
 	}
 
-  .l-header__top__nav ul {
-    max-width: initial;
-  }
-
   .fb {
   display: -webkit-box;
   display: -moz-box;

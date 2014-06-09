@@ -79,7 +79,7 @@ a {
 }
 
 p {
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 300;
 }
 
@@ -112,6 +112,7 @@ p {
 	}
 
 
+
 @media screen and (min-width: 1005px){
 
 	.fb {
@@ -121,6 +122,10 @@ p {
 		display: -webkit-flex;
 		display: flex;
 		justify-content: space-between;
+	}
+
+	.fb--reverse{
+		flex-direction: row-reverse;
 	}
 }
 
@@ -179,6 +184,9 @@ nav ul li{
 		padding: 5em 1.4em .8em;
 	}
 
+	.l-header__top__nav ul{
+	max-width: 440px !important;
+	}
 
 
 }
@@ -235,6 +243,15 @@ position: relative;
 /*------------------------------------*\
     BREADCRUMBS
 \*------------------------------------*/
+
+.breadcrumbs {
+	font-size: 12px;
+	padding-top: 20px;
+}
+
+.breadcrumbs a{
+	color: #d9251c;
+}
 
 /*------------------------------------*\
     HEADINGS
@@ -529,6 +546,10 @@ legend {
 
 }
 
+.button--cs{
+	font-size: 14px;
+}
+
 /*------------------------------------*\
 	GLOBAL
 \*------------------------------------*/
@@ -800,11 +821,11 @@ footer{
 }
 
 .top-content-box {
-	margin: 25px 20px;
+	margin: 17px 20px 25px;
 }
 
 .top-title {
-	font-size: 1.25em;
+	font-size: 1.6em;
 }
 .top-title-red{
 	color: #d9251c;
@@ -830,7 +851,30 @@ footer{
 }
 
 .cs-text {
-	width: 50%;
+	width: 51%;
+}
+
+.case-study {
+max-height: 338px;
+}
+
+.case-study__par {
+margin: 1em;
+}
+
+.case-study h2 {
+background: rgba(0,0,0,.6);
+display: block;
+width: 55%;
+padding: .5em;
+font-size: 1.6em;
+font-weight: 300;
+position: relative;
+top: -13em;
+}
+
+.fb--reverse h2 {
+float: right;
 }
 
 .recent-blog-single {
