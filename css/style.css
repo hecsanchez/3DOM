@@ -636,14 +636,14 @@ section{
 	width: 95%;
 }
 
-.featured__single__img, .non-featured__single__img{
+.featured__single__img, .non-featured__single__img, .service-single__img{
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
 }
 
-.featured__single__img img, .non-featured__single__img img {
+.featured__single__img img, .non-featured__single__img img, .service-single__img img {
 	height: 100%;
 	width: 100%;
 	opacity: .4;
@@ -662,8 +662,7 @@ section{
 }
 
 .featured__single__content--service{
-	height: 596px;
-	margin-top: -612px;
+
 }
 
 
@@ -832,11 +831,6 @@ footer{
 
 .cs-text {
 	width: 50%;
-}
-
-.service-single__img{
-	height: 609px;
-	background: #111111;
 }
 
 .recent-blog-single {
@@ -1286,6 +1280,11 @@ opacity: .1;
 	.slide-section__right img{
 		margin-left: -47%;
 		max-width: initial;
+	}
+
+	.featured__single__content__par {
+	margin-top: 48%;
+	display: block;
 	}
 
 }
