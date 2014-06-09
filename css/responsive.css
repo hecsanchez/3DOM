@@ -1792,8 +1792,76 @@ html.mm-opened.mm-black .mm-page {
   top: 5px; 
   }
 
+.featured-link {
+padding: 80px 0px 2px 9px;
+}
 
+.featured-link a, .featured-link{
+  background: #202025;
+  color: #fff;
+}
 
+.button{
+  background-image: url(../img/arrow-right.png);
+  background-repeat: no-repeat;
+  background-position: 76%;
+  background-size: 11px;
+}
+
+.non-featured__single__content a.button, .section--blog .button {
+  background-position: 90%;
+}
+
+.button.button--slider {
+  background-position: 98%;
+  background-size: 3%;
+}
+
+/* Hover effects */
+
+.main-nav li a:hover {
+  transition: all .3s ease;
+  background: #fff;
+  color: #df4f49;
+}
+
+.main-nav .featured-link:hover, .main-nav .featured-link a:hover{
+   transition: all .3s ease;
+  background: #ACACAC;
+  color: #d9251c;
+}
+
+.featured-link .sub-nav a:hover ~ .featured-link a{ 
+   transition: all .3s ease;
+    background: #ACACAC;
+  color: #d9251c;
+}
+
+.button:hover {
+     transition: all .3s ease;
+  background-color: #fff;
+  color: #d9251c;
+    background-image: url(../img/arrow-right-hover.png);
+  background-repeat: no-repeat;
+}
+
+.blog-header:hover {
+  transition: all .3s ease;
+  color: #fff;
+}
+
+.section--social-media a:hover > [class^="icon-"], [class*=" icon-"] {
+  transition: all .3s ease;
+  background: #fff;
+}
+
+.product-single:hover > .hot-pr-btn{
+     transition: all .3s ease;
+  background-color: #fff;
+  color: #d9251c;
+    background-image: url(../img/arrow-right-hover.png);
+  background-repeat: no-repeat;
+}
 
 @media screen and (min-width: 550px){
 
@@ -2072,5 +2140,19 @@ width: 65%;
 padding: 0.8em 1em .8em .5em;
 font-weight: 300;
 }
+
+}
+
+@media screen and (min-width: 1005px){
+
+  .main-nav li a {
+  border-right: 1px solid #df4f49;
+  padding: 5em 25px .8em 19px;
+  }
+
+  .main-nav li {
+    padding-top: 5em;
+    padding-bottom: .82em;
+  }
 
 }
