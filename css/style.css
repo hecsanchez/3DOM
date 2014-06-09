@@ -1047,6 +1047,12 @@ float: right;
 
 .pop-up-bg {
 	background-color: #202025;
+	text-align: center;
+}
+
+.logo-pop-up {
+	display: block;
+	margin: auto;
 }
 
 .services-wwd {
@@ -1056,6 +1062,7 @@ float: right;
 .images-case-studies, .article-case-studies{
 	max-width: 50%;
 }
+
 
  
 /*------------------------------------*\
