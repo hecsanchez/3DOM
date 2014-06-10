@@ -1082,6 +1082,10 @@ float: right;
 .product-info {
 	max-width: 45%;
 }
+
+.login, .signup {
+	display: inline-block;
+}
 /*------------------------------------*\
     OVERLAY
 \*------------------------------------*/
