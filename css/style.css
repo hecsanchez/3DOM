@@ -1086,6 +1086,11 @@ float: right;
 .login, .signup {
 	display: inline-block;
 }
+
+.dark-bg2 {
+	background-color: #151617;
+	border: 1px solid #3b3a3a;
+}
 /*------------------------------------*\
     OVERLAY
 \*------------------------------------*/
