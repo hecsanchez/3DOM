@@ -1092,8 +1092,12 @@ float: right;
 	border: 1px solid #3b3a3a;
 }
 
-.service-opt {
+.service-opt, .work-ws-text{
 	max-width: 50%;
+}
+
+.work-ws-list ul {
+	list-style: none;
 }
 /*------------------------------------*\
     OVERLAY
