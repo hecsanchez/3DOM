@@ -1091,6 +1091,10 @@ float: right;
 	background-color: #151617;
 	border: 1px solid #3b3a3a;
 }
+
+.service-opt {
+	max-width: 50%;
+}
 /*------------------------------------*\
     OVERLAY
 \*------------------------------------*/
