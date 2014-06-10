@@ -2168,6 +2168,21 @@ padding: 7px 41px 8px 11px;
   color: #fff;
 }
 
+.gallery{
+  max-height: 365px;
+}
+
+.gallery__title {
+  position: relative;
+  top: -14em;
+  background: rgba(0, 0, 0, 0.9) url(../img/arrow-right-hover.png) no-repeat;
+  width: 65%;
+  padding: 0.8em 1em .8em .5em;
+  font-weight: 300;
+  background-position: 90%;
+}
+
+
 @media screen and (min-width: 550px){
 
   .l-header__top__nav{
