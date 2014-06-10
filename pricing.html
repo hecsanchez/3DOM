@@ -10,10 +10,16 @@
 	    <link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 	    <link rel="stylesheet" href="css/owl.transitions.css">
 	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
 		<script type="text/javascript" src="js/owl.carousel.js"></script>
 		<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
 
+		<script>
+    $(function() {
+    $( "#tabs" ).tabs();
+  });
+  </script>
 	  </head>
 	<body>
 		<div>
@@ -142,74 +148,214 @@
 				</div>
 			</section>
 			<section class="gs-container packages">
-				<div class="">
-					<h2>Sponsorhip</h2>
+				<div id="tabs">
+					<ul class="">
+							<li class="tab-heading"><a href="#sponsorship"><h3>Sponsorship</h3></a></li>
+							<li class="tab-heading"><a href="#design"><h3>Design</h3></a></li>
+					</ul>
+
+					<div id="sponsorship" class="packages__tables fb tab_box">
+						<div class="package package--free">
+							<div class="package_price">
+								<p>FREE</p>
+							</div>
+							<ul class="features">
+								<li>Nulla egestas placerat orci</li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+							</ul>
+						</div>
+						<div  class="package">
+							<h3 class="package__title">STARTER</h3>
+							<div class="package_price">
+								<p><span class="currency">£</span><span class="amount">19.99</span><span class="currency">p/m</span></p>
+							
+							<form>
+								<ul>
+									<li>
+										<input type="radio" name="payment" value="Payment option1"selected="selected">Payment option 1
+									</li>
+									<li>
+										<input type="radio" name="payment" value="Payment option1">Payment option 2<br>
+									</li>
+									<li>
+										<input type="radio" name="payment" value="Payment option1">Payment option 3<br>
+									</li>
+								</ul>
+							</form>
+							</div>
+							<ul class="features">
+								<li>Nulla egestas placerat orci</li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+							</ul>
+						</div>
+						<div  class="package">
+							<h3 class="package__title">ADVANCED</h3>
+							<div class="package_price">
+								<p><span class="currency">£</span><span class="amount">29.99</span><span class="currency">p/m</span></p>
+							
+							<form>
+								<ul>
+									<li>
+										<input type="radio" name="payment" value="Payment option1"selected="selected">Payment option 1
+									</li>
+									<li>
+										<input type="radio" name="payment" value="Payment option1">Payment option 2<br>
+									</li>
+									<li>
+										<input type="radio" name="payment" value="Payment option1">Payment option 3<br>
+									</li>
+								</ul>
+							</form>
+							</div>
+							<ul class="features">
+								<li>Nulla egestas placerat orci</li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+							</ul>
+						</div>
+						<div  class="package">
+							<h3 class="package__title">ENTERPRISE</h3>
+							<div class="package_price">
+								<p><span class="currency">£</span><span class="amount">39.99</span><span class="currency">p/m</span></p>
+							
+							<form>
+								<ul>
+									<li>
+										<input type="radio" name="payment" value="Payment option1"selected="selected">Payment option 1
+									</li>
+									<li>
+										<input type="radio" name="payment" value="Payment option1">Payment option 2<br>
+									</li>
+									<li>
+										<input type="radio" name="payment" value="Payment option1">Payment option 3<br>
+									</li>
+								</ul>
+							</form>
+							</div>
+							<ul class="features">
+								<li>Nulla egestas placerat orci</li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+							</ul>
+						</div>
+						
+					</div>	
+					<div id="design" class="packages__tables fb tab_box">
+							<div class="package package--free">
+							<div class="package_price">
+								<p>FREE</p>
+							</div>
+							<ul class="features">
+								<li>Nulla egestas placerat orci</li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+							</ul>
+						</div>
+						<div  class="package">
+							<h3 class="package__title">STARTER 2</h3>
+							<div class="package_price">
+								<p><span class="currency">£</span><span class="amount">19.99</span><span class="currency">p/m</span></p>
+							
+							<form>
+								<ul>
+									<li>
+										<input type="radio" name="payment" value="Payment option1"selected="selected">Payment option 1
+									</li>
+									<li>
+										<input type="radio" name="payment" value="Payment option1">Payment option 2<br>
+									</li>
+									<li>
+										<input type="radio" name="payment" value="Payment option1">Payment option 3<br>
+									</li>
+								</ul>
+							</form>
+							</div>
+							<ul class="features">
+								<li>Nulla egestas placerat orci</li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+							</ul>
+						</div>
+						<div  class="package">
+							<h3 class="package__title">ADVANCED</h3>
+							<div class="package_price">
+								<p><span class="currency">£</span><span class="amount">29.99</span><span class="currency">p/m</span></p>
+							
+							<form>
+								<ul>
+									<li>
+										<input type="radio" name="payment" value="Payment option1"selected="selected">Payment option 1
+									</li>
+									<li>
+										<input type="radio" name="payment" value="Payment option1">Payment option 2<br>
+									</li>
+									<li>
+										<input type="radio" name="payment" value="Payment option1">Payment option 3<br>
+									</li>
+								</ul>
+							</form>
+							</div>
+							<ul class="features">
+								<li>Nulla egestas placerat orci</li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+							</ul>
+						</div>
+						<div  class="package">
+							<h3 class="package__title">ENTERPRISE</h3>
+							<div class="package_price">
+								<p><span class="currency">£</span><span class="amount">39.99</span><span class="currency">p/m</span></p>
+							
+							<form>
+								<ul>
+									<li>
+										<input type="radio" name="payment" value="Payment option1"selected="selected">Payment option 1
+									</li>
+									<li>
+										<input type="radio" name="payment" value="Payment option1">Payment option 2<br>
+									</li>
+									<li>
+										<input type="radio" name="payment" value="Payment option1">Payment option 3<br>
+									</li>
+								</ul>
+							</form>
+							</div>
+							<ul class="features">
+								<li>Nulla egestas placerat orci</li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+								<li>Amet lacinia neque gravida sit </li>
+							</ul>
+						</div>
 				</div>
 				<div class="">
-					<div class="">
-						<h2>FREE</h2>
-						<ul>
-							<li>Nulla egestas placerat orci</li>
-							<li>Amet lacinia neque gravida sit </li>
-							<li>Amet lacinia neque gravida sit </li>
-						</ul>
-					</div>
-					<div class="">
-						<h2>STARTER</h2>
-						<h2>£19.99 p/m</h2>
-						<form>
-							<input type="radio" name="payment" value="Payment option1">Payment option 1<br>
-							<input type="radio" name="payment" value="Payment option1">Payment option 2<br>
-							<input type="radio" name="payment" value="Payment option1">Payment option 3<br>
-						</form>
-						<ul>
-							<li>Nulla egestas placerat orci</li>
-							<li>Amet lacinia neque gravida sit </li>
-							<li>Amet lacinia neque gravida sit </li>
-							<li>Amet lacinia neque gravida sit </li>
-							<li>Amet lacinia neque gravida sit </li>
-						</ul>
-					</div>
-					<div class="">
-						<h2>ADVANCED</h2>
-						<h2>£29.99 p/m</h2>
-						<form>
-							<input type="radio" name="payment" value="Payment option1 ">Payment option 1<br>
-							<input type="radio" name="payment" value="Payment option2 ">Payment option 2<br>
-							<input type="radio" name="payment" value="Payment option3 ">Payment option 3<br>
-						</form>
-						<ul>
-							<li>Nulla egestas placerat orci</li>
-							<li>Amet lacinia neque gravida sit </li>
-							<li>Amet lacinia neque gravida sit </li>
-							<li>Amet lacinia neque gravida sit </li>
-							<li>Amet lacinia neque gravida sit </li>
-							<li>Amet lacinia neque gravida sit </li>
-							<li>Amet lacinia neque gravida sit </li>
-						</ul>
-					</div>
-					<div class="">
-						<h2>ENTERPRISE</h2>
-						<h2>£39.99 p/m</h2>
-						<form>
-							<input type="radio" name="payment" value="Payment option1 ">Payment option 1<br>
-							<input type="radio" name="payment" value="Payment option2 ">Payment option 2<br>
-							<input type="radio" name="payment" value="Payment option3 ">Payment option 3<br>
-						</form>
-						<ul>
-							<li>Nulla egestas placerat orci</li>
-							<li>Amet lacinia neque gravida sit </li>
-							<li>Amet lacinia neque gravida sit </li>
-							<li>Amet lacinia neque gravida sit </li>
-							<li>Amet lacinia neque gravida sit </li>
-							<li>Amet lacinia neque gravida sit </li>
-							<li>Amet lacinia neque gravida sit </li>
-							<li>Amet lacinia neque gravida sit </li>
-							<li>Amet lacinia neque gravida sit </li>
-							<li>Amet lacinia neque gravida sit </li>
-						</ul>
-					</div>
-					<div class="">
 						<span>READY TO START?</span>
 					</div>
 					<div class="">
@@ -221,8 +367,7 @@
 						<div class="">
 							<a href="">GET STARTED</a>
 						</div>
-					</div>
-				</div>				
+					</div>			
 			</section>
 			<section class="gs-container">
 				<div class="">
@@ -309,6 +454,8 @@
 					position : "right"
 				});
 			});
+		</script>
+
 		</script>
 	</div>
 	</body>

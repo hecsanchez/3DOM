@@ -18,7 +18,7 @@
  * SMALLPRINT..........
  * LISTS...............
  * IMAGES..............
- * TABLES..............
+ * TABS..............
  * FORMS...............
  * BUTTONS.............
  * SLIDER/CAROUSEL.....Styles for owl.carousel.js
@@ -310,7 +310,7 @@ nav ul li{
 	margin: 8px;
 }
 
-.footer-nav a:hover {
+.footer-nav a:hover, .blog-link:hover {
   color: #fff;
 }
 
@@ -702,6 +702,12 @@ img{
 	display: inline-block;
 }
 
+.gallery__featured:hover > a h2, .cs-image:hover > a h2 {
+	transition: all .3s ease;
+	background-color: rgba(255, 255, 255, 0.9);
+	color: #D9251C;
+}
+
 	.gallery__featured--right{
 		margin-right: 10px;
 	}
@@ -720,13 +726,143 @@ img{
 		margin-right: -12px;
 	}
 
+
+.back {
+	background: url(../img/arrow-left.png) no-repeat;
+	background-position: 0%;
+	background-size: 9px;
+	display: block;
+	line-height: 40px;
+	padding-left: 1.2em;
+	font-weight: 300;
+}
+
 /*------------------------------------*\
-    TABLES
+    TABS
 \*------------------------------------*/
+.ui-tabs-nav {
+	margin-top: 0;
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.tab-heading {
+	width: 50%;
+	text-align: center;
+}
+
+.tab-heading h3{
+	font-size: 27px;
+	font-weight: 300;
+	margin: 0.5em 0em;
+}
+
+.tab-heading a{
+	background: #3f3f3f;
+	display: block;
+	padding: 1px;
+}
 
 
+.ui-state-active a{
+	background: #202025;
+}
 
+.packages {
+	background: #202025;
+	border: 2px solid #3b3a3a;
+}
 
+.package_price {
+background: #000;
+padding: .5em;
+text-align: center;
+}
+
+.ui-state-active a:focus {
+outline: none;
+}
+
+.package {
+width: 100%;
+}
+
+.packages__tables {
+	margin: 3em;
+}
+
+.package--free {
+margin-top: 11.95em;
+}
+
+.package__title{
+	display: block;
+	background: #D9251C;
+	margin: 0;
+	padding: .8em;
+	text-align: center;
+	border-left: 1px solid #3F3F3F;
+	border-top: 1px solid #3F3F3F;
+	border-bottom: 1px solid #3F3F3F;
+}
+
+.package_price{
+	border-left: 1px solid #3F3F3F;
+	border-bottom: 1px solid #3F3F3F;
+}	
+
+.package:last-child .package__title, .package:last-child .package_price{
+	border-right: 1px solid #3F3F3F;
+}
+
+.package:first-child .package_price{
+	border-top: 1px solid #3F3F3F;
+}
+
+.package ul {
+	margin-left: 0;
+	margin-top: 0;
+	padding-left: 0;
+}
+
+.package:last-child ul{
+	border-right: 1px solid #3f3f3f;
+}
+
+.package ul li{
+	list-style: none;
+	font-size: 12px;
+}
+
+.package_price ul li{
+	padding: .4em 0;
+}
+
+.package_price input[type="radio"]{
+	margin-right: .5em;
+}
+
+.package_price ul{
+	border: 0;
+}
+
+.package .features li{
+	padding: 15px;
+	border-left: 1px solid #3f3f3f;
+	border-bottom: 1px solid #3f3f3f;
+
+}
+
+.amount{
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.currency{
+	font-size: 17px;
+}
 
 
 /*------------------------------------*\
@@ -941,6 +1077,20 @@ legend {
 	font-size: 14px;
 	margin-top: 2em;
 	padding: 7px 41px 8px 11px;
+}
+
+input.tftextinput {
+height: 28px;
+}
+
+.button--search{
+	border: 0;
+}
+
+.latest-blog-single .button {
+display: block;
+width: 25%;
+margin: 1.5em 0;
 }
 
 @media screen and (min-width: 550px){
@@ -1417,6 +1567,20 @@ padding-right: 2em;
 	color: #cc241c;
 }
 
+.blog-link{
+	display: block;
+	margin: .5em 0;
+	background-image: url(../img/arrow-right-hover.png);
+	background-repeat: no-repeat;
+	background-position: 46%;
+	background-size: 8px;
+	padding-left: .4em;
+}
+
+.blog-link:hover{
+	background-image: url(../img/arrow-right.png);
+}
+
 .blog-header:hover {
   transition: all .3s ease;
   color: #fff;
@@ -1621,10 +1785,6 @@ border-top: 1px solid #5A5A5A;
  	-webkit-column-gap : 20px;
 }
 
-.packages {
-	background: #202025;
-	border: 2px solid #3b3a3a;
-}
 
 .cs-text {
 	width: 51%;
@@ -1636,6 +1796,11 @@ width: 49%;
 
 .case-study {
 max-height: 338px;
+}
+
+.case-study h2 {
+	background: rgba(0, 0, 0, 0.9) url(../img/arrow-right-hover.png) no-repeat;
+	background-position: 90%;
 }
 
 .case-study__par {
@@ -1664,6 +1829,17 @@ float: right;
 .latest-blog-single {
 	width: 47.8%;
 }
+
+.blog-single__content{
+	padding: .4em;
+}
+
+.latest-blog-single__headline{
+	color: #d9251c;
+	font-size: 24px;
+	font-weight: 300;
+}
+
 
 .main-article {
 	max-width: 75%;
@@ -1825,8 +2001,39 @@ float: right;
 }
 
 .images-case-studies, .article-case-studies{
-	max-width: 50%;
+	width: 50%;
 }
+
+.article-case-studies{
+	padding: 1em 1em 1em 1em;
+}
+
+.images-case-studies{
+	padding: 1em 1em 1em 0;
+}
+
+.images-case-studies h2 {
+	background: rgba(0, 0, 0, 0.8);
+	display: block;
+	width: 45%;
+	padding: .5em;
+	font-size: 1.6em;
+	font-weight: 300;
+	position: relative;
+	top: 1.5em;
+	z-index: 3;
+}
+
+.case-study__gallery {
+	position: relative;
+	top: -7.4em;
+	flex-wrap: wrap;
+}
+
+.case-study__gallery img {
+	margin-bottom: 18px;
+}
+
 
 .product-info {
 	max-width: 45%;
