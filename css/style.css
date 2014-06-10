@@ -494,12 +494,12 @@ h3{
 }
 
 .slide__heading {
-font-size: 1.6em;
-width: 100%;
-max-width: 200px;
-display: block;
-border-bottom: 1px solid #3F3F3F;
-padding-left: 1.3em;
+	font-size: 1.6em;
+	width: 100%;
+	max-width: 200px;
+	display: block;
+	border-bottom: 1px solid #3F3F3F;
+	padding-left: 1.3em;
 }
 
 @media screen and (min-width: 550px){
@@ -524,17 +524,6 @@ padding-left: 1.3em;
 
 }
 
-@media screen and (min-width: 1005px) {
-
-	.slide__heading{
-		font-size: 1.6em;
-		width: 100%;
-		max-width: 200px;
-		display: block;
-		border-bottom: 1px solid #3F3F3F;
-		padding-left: 1.3em;
-	}
-}
 
 
 
