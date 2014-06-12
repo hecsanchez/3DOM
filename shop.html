@@ -1,59 +1,24 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	  <meta charset="utf-8">
+	  	<meta charset="utf-8">
 	    <title>3DOM Wraps</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <link href='http://fonts.googleapis.com/css?' rel='stylesheet' type='text/css'>
 	    <link rel="stylesheet" href="css/style.css">
-	    <link rel="stylesheet" href="css/responsive.css">
-	    <link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-	    <link rel="stylesheet" href="css/owl.transitions.css">
 	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
 		<script type="text/javascript" src="js/owl.carousel.js"></script>
 		<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
+
 	  </head>
 	<body>
+		<div>
 			<header class="l-header u-cf">
 			<div class="l-header__top u-cf">
-				<div class="gs-container fb">
-					<div class="l-header__top__logo">
-						<a href="index.html" class="logo"><img src="img/logo.png"></a>
-					</div>
-					<div class="l-header__top__nav">
-						<nav class="">
-							<ul class="fb">
-						        <li>Customise</li>
-						        <li>Design</li>
-						        <li>Sponsorship</li>
-			        		</ul>
-						<nav>
-					</div>
-					<div class="l-header__top__quote">
-						<div class="quote-select">Get a quote<i></i></div>
-						<div class="quote-dropdown">
-							<span class="">Select a service</span>
-							<ul>
-								<li>Vinyl Wrapping</li>
-								<li>Paint Protections</li>
-								<li>Vehicle detailing</li>
-								<li>Motorsport Transport</li>
-							</ul>
-							<ul>
-								<li>UK</li>
-								<li>US</li>
-								<li>AUS</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="l-header__nav u-cf">
-				<div class="gs-container">
-					<nav class="main-nav">
+				<nav id="nav" class="mobile-nav">
 			        <ul class="fb">
-			          <li><a href="index.html">Home</a></li>
+			          <li class="selected"><a href="index.html">Home</a></li>
 			          <li><a href="services.html">Services</a></li>
 			          <li><a href="gallery.html">Gallery</a></li>
 			          <li><a href="case-studies.html" >Case Studies</a></li>
@@ -72,12 +37,86 @@
 						        <li><a href="shop.html">Wall Vinyl</a>
 						        <li><a href="shop.html">Artwork</a>
 			          		</ul>
+			          	</li>
+			          	<li><a class="various" data-fancybox-type="iframe" href="sign-in.html">My Account</a></li>
+			          	<li><a href="#">Get a quote</a>
+			          		<ul>
+								<li>Vinyl Wrapping</li>
+								<li>Paint Protections</li>
+								<li>Vehicle detailing</li>
+								<li>Motorsport Transport</li>
+								<li>UK</li>
+								<li>USA</li>
+								<li>AUS</li>
+							</ul>
+						</li>  
+			        </ul>
+			      </nav>
+				<div class="gs-container fb">
+					<div class="l-header__top__logo">
+						<a href="index.html" class="logo"><img src="img/logo.png"></a>
+					</div>
+					
+					<div class="l-header__top__nav">
+							<ul class="tagline fb">
+						        <li>Customise</li>
+						        <li>Design</li>
+						        <li>Sponsorship</li>
+						    </ul>
+					</div>
+					<div class="l-header__top__navicon">
+						<a href="#nav">Menu<i class="icon-list"></i></a>
+					</div>
+					<div class="l-header__top__quote">
+						<div class="quote-select"><span>Get a quote</span><i class="arrow-down"></i></div>
+						<div class="quote-dropdown">
+							<span class="nb">Select a service</span>
+							<ul class="nl">
+								<li><a href="#">Vinyl Wrapping</a></li>
+								<li><a href="#">Paint Protections</a></li>
+								<li><a href="#">Vehicle detailing</a></li>
+								<li><a href="#">Motorsport Transport</a></li>
+							</ul>
+							<ul class="geo fb">
+								<li><a href="#">UK</a></li>
+								<li class="usa"><a href="#">USA</a></li>
+								<li><a href="#">AUS</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="l-header__nav u-cf">
+				<div class="gs-container">
+					<nav class="main-nav">
+			        <ul class="fb">
+			          <li class="selected"><a href="index.html">Home</a></li>
+			          <li><a href="services.html">Services</a></li>
+			          <li><a href="gallery.html">Gallery</a></li>
+			          <li><a href="case-studies.html" >Case Studies</a></li>
+			          <li><a href="pricing.html">Pricing</a></li>
+			          <li><a href="blog.html">Blog</a></li>
+			          <li><a href="contact.html">Contact</a></li>
+			          <li class="featured-link"><a href="shop.html">Shop</a>
 			          </li>
-			          <li><a class="various" data-fancybox-type="iframe" href="sign-in.html">My Account</a></li>
+			          <li class="featured-link"><a class="various" data-fancybox-type="iframe" href="sign-in.html">My Account</a></li>
 			        </ul>
 			      </nav>
 			  </div>
-			<div>
+			</div>
+			<div class="l-header__shopnav u-cf ">
+				<ul class="shop-sub-nav fb nl gs-container">
+		          			<li><a href="index.html">Bikes</a></li>
+					        <li><a href="services.html">Cars & Vans</a></li>
+					        <li><a href="gallery.html">Helmets</a></li>
+					        <li><a href="case-studies.html" >Car Care</a></li>
+					        <li><a href="pricing.html">Motorsport</a></li>
+					        <li><a href="blog.html">Apparel</a></li>
+					        <li><a href="contact.html">Gift Cards</a></li>
+					        <li><a href="shop.html">Wall Vinyl</a>
+					        <li><a href="shop.html">Artwork</a>
+		        </ul>
+		    </div>
 		</header>
 		<div class="l-main">
 			<section class="owl-carousel slider u-cf" id="slider">
@@ -124,47 +163,76 @@
 					</div>
 				</div>
 			</section>
-			<section class="gs-container">
-				<div class="">Shop Categories</div>
-				<a class="button" href="#">View all Categories</a>
+			<section class="shop-section gs-container fb">
+				<div class="shop-section__title grey-bg"><h2>Shop Categories</h2></div>
+				<a class="button button--shop-section" href="categories.html">View all Categories</a>
 			</section>
-			<section class="gs-container">
-				<div class="">
-					<div class="">
-						<img src="img/bikes.jpg" alt="">
-					</div>
-					<div class="">
-						<h2>Bikes</h2>
-						<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue .</p>
-						<div class="">
-							<a class="button" href="#">View range</a>
+			<section id="featuredcat" class="gs-container fb owl-carousel">
+				<div class="featuredcat__single one-third">
+					<div>
+						<div class="featuredcat__single__img">
+							<img src="img/bikes.jpg" alt="">						
+						</div>
+						<div class="featuredcat__single__content">
+							<h2>Bikes</h2>
+							<div class="">
+								<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel</p>
+							</div>
+							<div class="">
+								<a class="button button--cat" href="#">View range</a>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<img src="img/cars&vans.jpg" alt="">
-					</div>
-					<div class="">
-						<h2>Cars & Vans</h2>
-						<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue .</p>
-						<div class="">
-							<a class="button" href="#">View range</a>
+				<div class="featuredcat__single one-third">
+					<div>
+						<div class="featuredcat__single__img">
+							<img src="img/cars&vans.jpg" alt="">						
+						</div>
+						<div class="featuredcat__single__content">
+							<h2>Cars & Vans</h2>
+							<div class="">
+								<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel</p>
+							</div>
+							<div class="">
+								<a class="button button--cat" href="#">View range</a>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="">
-						<img src="img/helmets.jpg" alt="">
-					</div>
-					<div class="">
-						<h2>Helmets</h2>
-						<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue .</p>
-						<div class="">
-							<a class="button" href="#">View range</a>
+				<div class="featuredcat__single one-third">
+					<div>
+						<div class="featuredcat__single__img">
+							<img src="img/helmets.jpg" alt="">						
+						</div>
+						<div class="featuredcat__single__content">
+							<h2>Helmets</h2>
+							<div class="">
+								<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel</p>
+							</div>
+							<div class="">
+								<a class="button button--cat" href="#">View range</a>
+							</div>
 						</div>
 					</div>
 				</div>
+				<div class="featuredcat__single one-third">
+					<div>
+						<div class="featuredcat__single__img">
+							<img src="img/helmets.jpg" alt="">						
+						</div>
+						<div class="featuredcat__single__content">
+							<h2>Helmets</h2>
+							<div class="">
+								<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel</p>
+							</div>
+							<div class="">
+								<a class="button button--cat" href="#">View range</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			
 			</section>
 			<section class="gs-container">
 				<div class="long-sec-t">Featured products</div>
@@ -172,51 +240,63 @@
 			<section class="gs-container fb">
 				<div class="shop-featured">
 					<img src="img/shop-featured.png" alt="">
-					<div class="">Venture Shield Aprilia RSV4</div>
-					<div class="">from £40.00</div>
-					<div class="">
-						<a class="button" href="#">View</a>
+					<div class="shop-featured__content">
+						<h4 class="">Venture Shield Aprilia RSV4</h4>
+						<p>from <span class="shop-price">£40.00</span></p>
+						<div class="">
+							<a class="button button--shopitem" href="#">View</a>
+						</div>
 					</div>
 				</div>
 				<div class="shop-featured">
 					<img src="img/shop-featured.png" alt="">
-					<div class="">Venture Shield Aprilia RSV4</div>
-					<div class="">from £40.00</div>
-					<div class="">
-						<a class="button" href="#">View</a>
+					<div class="shop-featured__content">
+						<h4 class="">Venture Shield Aprilia RSV4</h4>
+						<p>from <span class="shop-price">£40.00</span></p>
+						<div class="">
+							<a class="button button--shopitem" href="#">View</a>
+						</div>
 					</div>
 				</div>
 				<div class="shop-featured">
 					<img src="img/shop-featured.png" alt="">
-					<div class="">Venture Shield Aprilia RSV4</div>
-					<div class="">from £40.00</div>
-					<div class="">
-						<a class="button" href="#">View</a>
+					<div class="shop-featured__content">
+						<h4 class="">Venture Shield Aprilia RSV4</h4>
+						<p>from <span class="shop-price">£40.00</span></p>
+						<div class="">
+							<a class="button button--shopitem" href="#">View</a>
+						</div>
 					</div>
 				</div>
 				<div class="shop-featured">
 					<img src="img/shop-featured.png" alt="">
-					<div class="">Venture Shield Aprilia RSV4</div>
-					<div class="">from £40.00</div>
-					<div class="">
-						<a class="button" href="#">View</a>
+					<div class="shop-featured__content">
+						<h4 class="">Venture Shield Aprilia RSV4</h4>
+						<p>from <span class="shop-price">£40.00</span></p>
+						<div class="">
+							<a class="button button--shopitem" href="#">View</a>
+						</div>
 					</div>
 				</div>
 			</section>
 			<section class="gs-container fb">
-				<div class="payment-s ">
-					<h2>Payment & Shipping</h2>
-					<img src="img/payment.png" alt="">
-					<p>Shipping regions include Canada, US, Europe, Australia, Japan. Contact us to get a quote for other territories.</p>
+				<div class="payment-s shop-nonfeatured">
+					<div class="shop-nonfeatured__content">
+						<h2>Payment & Shipping</h2>
+						<img src="img/payment.png" alt="">
+						<p>Shipping regions include Canada, US, Europe, Australia, Japan. Contact us to get a quote for other territories.</p>
+					</div>
 				</div>
-				<div class="">
-					<h2>Mailing List</h2>
-					<p>Subscribe to our mailing list to stay up-to-date with promotions, new products and our community.</p>
-					<form action="#" method="GET">
-					   <input name="email" type="text" placeholder="Your Email">
-					   <input type="submit" name="submit" value="Subscribe" >
-					</form>
-				<div>
+				<div class="shop-nonfeatured">
+					<div class="shop-nonfeatured__content">
+						<h2>Mailing List</h2>
+						<p>Subscribe to our mailing list to stay up-to-date with promotions, new products and our community.</p>
+						<form class="fb" action="#" method="GET">
+						   <input name="email" type="text" placeholder="Your Email">
+						   <input type="submit" name="submit" value="Subscribe" >
+						</form>
+					</div>
+				</div>
 			</section>
 			<section class="gs-container fb">
 				<div class="shop-text">
@@ -224,28 +304,34 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis at erat sit amet venenatis. Donec sed pretium quam. Nam ante magna, scelerisque et semper suscipit, pharetra non metus. Nulla in interdum justo. Nulla ullamcorper commodo euismod. Aenean at adipiscing massa, sed ultricies diam. Donec elit eros, dictum sed odio eget, eleifend scelerisque ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla ac fringilla quam, eget laoreet elit.
 					Sed vulputate dolor velit, ut tincidunt quam pellentesque ac. Phasellus in laoreet risus, condimentum malesuada ipsum. Nulla eget orci augue. Aenean dictum, lectus ac cursus pretium, augue enim volutpat sem, sit amet accumsan lacus massa et justo. Aliquam eget nisl eget metus faucibus tristique eu sit amet metus. Quisque ultrices lorem eros, at volutpat augue placerat sed. Suspendisse vel ullamcorper velit. Integer neque est, facilisis non pellentesque a, sodales vitae erat. Nulla lacinia volutpat lectus, eget ultrices quam elementum et. Aenean ac arcu purus. In luctus lectus vel felis dapibus, vitae pharetra urna pharetra. Nam posuere libero sit amet enim accumsan scelerisque. Sed metus dui, lobortis sit amet fringilla id, pharetra eu metus. Duis sit amet dui vestibulum, auctor nunc sit amet, iaculis urna. Nam suscipit metus nec nulla accumsan, nec tempor neque imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				</div>
-				<div class="fb">
+				<div class="shop-recentblogs">
 					<div class="top-title">Recent<span class="top-title-red">Blogs</span></div>
-					<div class="">
-						<div class="">
-							<img src="img/recent-blog.jpg" alt="">
-							<h3 class="blog-header">Blog headline</h3>
-							<div class="">05.05.2014</div>
-							<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit,  </p>
+					<div class="fb shop-recentblogs__items">
+						<div class="shop-recentblogs__single grey-bg">
+							<div class="">
+								<img src="img/recent-blog.jpg" alt="">
+							</div>
+							<div class="blog-single__content">
+									<div class="blog-header">Blog headline</div>
+									<div class="">05.05.2014</div>
+									<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit,  </p>
+							</div>
+							<div class="">
+								<a href="blog-selected.html" class="blog-link">Read more</a>
+							</div>
 						</div>
-						<div class="">
-							<a href="#" class="blog-link">Read more</a>
-						</div>
-					</div>
-					<div class="">
-						<div class="">
-							<img src="img/recent-blog.jpg" alt="">
-							<h3 class="blog-header">Blog headline</h3>
-							<div class="">05.05.2014</div>
-							<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit,  </p>
-						</div>
-						<div class="">
-							<a href="#" class="blog-link">Read more</a>
+						<div class="shop-recentblogs__single grey-bg">
+							<div class="">
+								<img src="img/recent-blog.jpg" alt="">
+							</div>
+							<div class="blog-single__content">
+									<div class="blog-header">Blog headline</div>
+									<div class="">05.05.2014</div>
+									<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit,  </p>
+							</div>
+							<div class="">
+								<a href="blog-selected.html" class="blog-link">Read more</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -270,14 +356,14 @@
 			</section><!-- End section-social -->
 			<section class="section--logos u-cf">
 				<div class="gs-container fb">
-					<a href=""><img src="img/sponsor1.png" alt=""></a>
-					<a href=""><img src="img/sponsor2.png" alt=""></a>
-					<a href=""><img src="img/sponsor3.png" alt=""></a>
-					<a href=""><img src="img/sponsor4.png" alt=""></a>
+					<a href=""><i class="capsicum"></i></a>
+					<a href=""><i class="letsrace"></i></a>
+					<a href=""><i class="carling"></i></a>
+					<a href=""><i class="oz-racing"></i></a>
 				</div>
 			</section><!-- End section-sponsors -->
 		</div>
-		<footer class="u-cf">
+		<footer class="l-footer u-cf">
 			<div class="gs-container footer-fb">
 				<div class="footer-red"></div>
 				<div class="footer-logo">
@@ -293,11 +379,11 @@
 				          <li><a href="blog.html">Blog</a></li>
 				          <li><a href="contact.html" >Contact</a></li>
 				          <li><a href="shop.html">Shop</a></li>
-				          <li><a href="account.html">My Account</a></li>
+				          <li><a class="various" data-fancybox-type="iframe" href="signin.html">My Account</a></li>
 				        </ul>
 				</div>
 			</div>
-				<div class="gs-container">
+				<div class="gs-container footer-priv">
 					<p><a href="#">Privacy</a></p>
 				</div>
 				<div class="gs-container footer-copy-fb">
@@ -332,7 +418,7 @@
 		  });
 		});
 		$(document).ready(function() {
-		  var owl = $("#featured");
+		  var owl = $("#featuredcat");
 
 		  owl.owlCarousel({
 		     items : 3, //10 items above 1000px browser width

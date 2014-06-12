@@ -6,50 +6,22 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <link href='http://fonts.googleapis.com/css?' rel='stylesheet' type='text/css'>
 	    <link rel="stylesheet" href="css/style.css">
+	    <link rel="stylesheet" href="css/responsive.css">
+	    <link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	    <link rel="stylesheet" href="css/owl.transitions.css">
 	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-		<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<script type="text/javascript" src="js/owl.carousel.js"></script>
+		<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
+
 	  </head>
 	<body>
+		<div>
 			<header class="l-header u-cf">
 			<div class="l-header__top u-cf">
-				<div class="gs-container fb">
-					<div class="l-header__top__logo">
-						<a href="index.html" class="logo"><img src="img/logo.png"></a>
-					</div>
-					<div class="l-header__top__nav">
-						<nav class="">
-							<ul class="fb">
-						        <li>Customise</li>
-						        <li>Design</li>
-						        <li>Sponsorship</li>
-			        		</ul>
-						<nav>
-					</div>
-					<div class="l-header__top__quote">
-						<div class="quote-select">Get a quote<i></i></div>
-						<div class="quote-dropdown">
-							<span class="">Select a service</span>
-							<ul>
-								<li>Vinyl Wrapping</li>
-								<li>Paint Protections</li>
-								<li>Vehicle detailing</li>
-								<li>Motorsport Transport</li>
-							</ul>
-							<ul>
-								<li>UK</li>
-								<li>US</li>
-								<li>AUS</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="l-header__nav u-cf">
-				<div class="gs-container">
-					<nav class="main-nav">
+				<nav id="nav" class="mobile-nav">
 			        <ul class="fb">
-			          <li><a href="index.html">Home</a></li>
+			          <li class="selected"><a href="index.html">Home</a></li>
 			          <li><a href="services.html">Services</a></li>
 			          <li><a href="gallery.html">Gallery</a></li>
 			          <li><a href="case-studies.html" >Case Studies</a></li>
@@ -68,138 +40,219 @@
 						        <li><a href="shop.html">Wall Vinyl</a>
 						        <li><a href="shop.html">Artwork</a>
 			          		</ul>
+			          	</li>
+			          	<li><a class="various" data-fancybox-type="iframe" href="sign-in.html">My Account</a></li>
+			          	<li><a href="#">Get a quote</a>
+			          		<ul>
+								<li>Vinyl Wrapping</li>
+								<li>Paint Protections</li>
+								<li>Vehicle detailing</li>
+								<li>Motorsport Transport</li>
+								<li>UK</li>
+								<li>USA</li>
+								<li>AUS</li>
+							</ul>
+						</li>  
+			        </ul>
+			      </nav>
+				<div class="gs-container fb">
+					<div class="l-header__top__logo">
+						<a href="index.html" class="logo"><img src="img/logo.png"></a>
+					</div>
+					
+					<div class="l-header__top__nav">
+							<ul class="tagline fb">
+						        <li>Customise</li>
+						        <li>Design</li>
+						        <li>Sponsorship</li>
+						    </ul>
+					</div>
+					<div class="l-header__top__navicon">
+						<a href="#nav">Menu<i class="icon-list"></i></a>
+					</div>
+					<div class="l-header__top__quote">
+						<div class="quote-select"><span>Get a quote</span><i class="arrow-down"></i></div>
+						<div class="quote-dropdown">
+							<span class="nb">Select a service</span>
+							<ul class="nl">
+								<li><a href="#">Vinyl Wrapping</a></li>
+								<li><a href="#">Paint Protections</a></li>
+								<li><a href="#">Vehicle detailing</a></li>
+								<li><a href="#">Motorsport Transport</a></li>
+							</ul>
+							<ul class="geo fb">
+								<li><a href="#">UK</a></li>
+								<li class="usa"><a href="#">USA</a></li>
+								<li><a href="#">AUS</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="l-header__nav u-cf">
+				<div class="gs-container">
+					<nav class="main-nav">
+			        <ul class="fb">
+			          <li class="selected"><a href="index.html">Home</a></li>
+			          <li><a href="services.html">Services</a></li>
+			          <li><a href="gallery.html">Gallery</a></li>
+			          <li><a href="case-studies.html" >Case Studies</a></li>
+			          <li><a href="pricing.html">Pricing</a></li>
+			          <li><a href="blog.html">Blog</a></li>
+			          <li><a href="contact.html">Contact</a></li>
+			          <li class="featured-link"><a href="shop.html">Shop</a>
+			          		<ul class="sub-nav">
+			          			<li><a href="index.html">Bikes</a></li>
+						        <li><a href="services.html">Cars & Vans</a></li>
+						        <li><a href="gallery.html">Helmets</a></li>
+						        <li><a href="case-studies.html" >Car Care</a></li>
+						        <li><a href="pricing.html">Motorsport</a></li>
+						        <li><a href="blog.html">Apparel</a></li>
+						        <li><a href="contact.html">Gift Cards</a></li>
+						        <li><a href="shop.html">Wall Vinyl</a>
+						        <li><a href="shop.html">Artwork</a>
+			          		</ul>
 			          </li>
-			          <li><a class="various" data-fancybox-type="iframe" href="sign-in.html">My Account</a></li>
+			          <li class="featured-link"><a class="various" data-fancybox-type="iframe" href="sign-in.html">My Account</a></li>
 			        </ul>
 			      </nav>
 			  </div>
 			<div>
 		</header>
-		<div class="">
+		<div class="l-main u-cf">
 			<div class="gs-container breadcrumbs">
 				<a href="index.html"><span>Home</span></a> |<a href="services.html"><span>Services</span></a> | <span>Sponsorship App</span>
 			</div>
-			<section>
-				<h2>Our Services | Sponsorhip App</h2>
-				<a href="services.html">Back to services</a>
-				<div class="">
-					<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue .Lorem ipsum dolor sit amet, consectetur adipiscing elit.Praesent in interdum arcu. Phasellus diam ligula, convallis sit amet dui vitae, tincidunt volutpat nisi. Etiam a enim et augue vehicula egestas. Quisque lobortis, quam a tristique viverra, mauris libero dapibus neque, nec interdum erat erat vel nunc. Sed luctus malesuada elementum. Quisque in metus sit amet lectus sollicitudin accumsan sed eget nibh. Sed consectetur ornare porttitor. Quisque in nisl in justo imperdiet tempor a quis enim. Donec in ipsum ultricies, feugiat lectus eget, egestas nibh. Suspendisse iaculis molestie sapien, non gravida orci molestie sed. Etiam cursus lobortis metus a pretium. Quisque eros massa, placerat sit amet posuere in, aliquet non enim. Suspendisse sodales erat sed tempus lacinia.</p>
-				</div>
-			</section>
-			<section class="">
-				<div class="">
-					<img src="" alt="">
-					<a href="" class="button"><h2>How it works</h2></a>
-				</div>
-				<div class="">
-					<img src="" alt="">
-					<a href="" class="button"><h2>Sign up now</h2></a>
-				</div>
-				<div class="">
-					<img src="" alt="">
-					<a href="" class="button"><h2>Work with us</h2></a>
-				</div>
-			</section>
-			<section class="">
-				<div class="">
+			<section class="gs-container u-cf grey-bg">
+				<div class="top-content-box">
+					<div class="top-title">Our <span class="top-title-red">Services</span> | <span class="top-title-red">Sponsorship App</span></div>
+					<a class="back" href="services.html">Back to services</a>
 					<div class="">
-						<h2>Who's it for?</h2>
-						<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue .Nam a laoreet nunc, vel suscipit leo. Maecenas consequat hendrerit ligula. Maecenas laoreet volutpat suscipit. Quisque sit amet malesuada eros. Mauris aliquet consectetur orci, in facilisis tortor hendrerit nec. Pellentesque egestas neque ac eros faucibus aliquam. Quisque placerat sem ut risus eleifend condimentum. Proin vulputate eros id dolor euismod tincidunt. Aliquam eget adipiscing lorem, eget aliquam nunc. Duis facilisis sem vestibulum, tincidunt ante quis, adipiscing metus.</p>
-					<div>
-					<div class="">
-						<div class="">
-							<img src="" alt="">
-							<p>User Type</p>
-						</div>
-						<div class="">
-							<img src="" alt="">
-							<p>User Type</p>
-						</div>
-						<div class="">
-							<img src="" alt="">
-							<p>User Type</p>
-						</div>
-						<div class="">
-							<img src="" alt="">
-							<p>User Type</p>
-						</div>
-						<div class="">
-							<img src="" alt="">
-							<p>User Type</p>
-						</div>
-						<div class="">
-							<img src="" alt="">
-							<p>User Type</p>
-						</div>
-					</div>
-				</div>
-				<div class="">
-					<div class="">
-						<img src="" alt="">
-						<h2>How it works</h2>
-					</div>
-					<div class="">
-						<img src="" alt="">
-						<img src="" alt="">
-						<img src="" alt="">
-						<img src="" alt="">
+						<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue .Lorem ipsum dolor sit amet, consectetur adipiscing elit.Praesent in interdum arcu. Phasellus diam ligula, convallis sit amet dui vitae, tincidunt volutpat nisi. Etiam a enim et augue vehicula egestas. Quisque lobortis, quam a tristique viverra, mauris libero dapibus neque, nec interdum erat erat vel nunc. Sed luctus malesuada elementum. Quisque in metus sit amet lectus sollicitudin accumsan sed eget nibh. Sed consectetur ornare porttitor. Quisque in nisl in justo imperdiet tempor a quis enim. Donec in ipsum ultricies, feugiat lectus eget, egestas nibh. Suspendisse iaculis molestie sapien, non gravida orci molestie sed. Etiam cursus lobortis metus a pretium. Quisque eros massa, placerat sit amet posuere in, aliquet non enim. Suspendisse sodales erat sed tempus lacinia.</p>
 					</div>
 				</div>
 			</section>
-			<section class="">
+			<section class="gs-container u-cf fb">
 				<div class="">
+					<img src="" alt="">
+					<a href="" class="button">How it works</a>
+				</div>
+				<div class="">
+					<img src="" alt="">
+					<a href="" class="button">Sign up now</a>
+				</div>
+				<div class="">
+					<img src="" alt="">
+					<a href="" class="button">Work with us</a>
+				</div>
+			</section>
+			<section class="gs-container fb">
+				<div class="services-wwd grey-bg">
+					<div class="">
+						<h2>What we do</h2>
+						<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue .Nam a laoreet nunc, vel suscipit leo. Maecenas consequat hendrerit ligula. Maecenas laoreet volutpat suscipit. Quisque </p>
+					</div>
+					<div class="fb">
+						<div class="">
+							<div class="">
+								<img src="img/services-cd-blank.jpg" alt="">
+								<p>Web design</p>
+							</div>
+							<div class="">
+								<img src="img/services-cd-blank.jpg" alt="">
+								<p>Branding</p>
+							</div>
+							<div class="">
+								<img src="img/services-cd-blank.jpg" alt="">
+								<p>Hosting</p>
+							</div>
+						</div>
+						<div class="">
+							<div class="">
+								<img src="img/services-cd-blank.jpg" alt="">
+								<p>Livery designe</p>
+							</div>
+							<div class="">
+								<img src="img/services-cd-blank.jpg" alt="">
+								<p>Social media strategy</p>
+							</div>
+							<div class="">
+								<img src="img/services-cd-blank.jpg" alt="">
+								<p>Email campaigns</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="grey-bg">
+					<div class="">
+						<img src="img/services-custom-design-featured.jpg" alt="">
+						<h2>Image Showcase</h2>
+					</div>
+					<div class="">
+						<img src="img/services-customd-tn1.jpg" alt="">
+						<img src="img/services-customd-tn2.jpg" alt="">
+						<img src="img/services-customd-tn3.jpg" alt="">
+						<img src="img/services-customd-tn4.jpg" alt="">
+					</div>
+				</div>
+			</section>
+			<section class="gs-container fb">
+				<div class="dark-bg2">
 					<h2>Case Study</h2>
-					<img src="" alt="">
-					<img src="" alt="">
-					<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue .Praesent in interdum arcu. Phasellus diam ligula, convallis sit amet dui vitae, tincidunt volutpat nisi. Etiam a enim et augue vehicula egestas. Quisque lobortis, quam a tristique viverra, mauris libero dapibus neque, nec interdum erat erat vel nunc. 
-					Sed luctus malesuada elementum. Quisque in metus sit amet lectus sollicitudin accumsan sed eget nibh. Sed consectetur ornare porttitor. Quisque in nisl in justo imperdiet tempor a quis enim. Donec in ipsum ultricies, feugiat lectus eget, egestas nibh. Suspendisse iaculis molestie sapien, non gravida orci molestie sed. Etiam cursus lobortis metus a pretium. Quisque eros massa, placerat sit amet posuere in, aliquet non enim. Suspendisse sodales erat sed tempus lacinia.</p>
+					<img src="img/services-cd-blank2.jpg" alt="">
+					<img src="img/services-cd-blank2.jpg" alt="">
+					<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue .Praesent in interdum arcu. Phasellus diam ligula, convallis sit amet dui vitae, tincidunt volutpat nisi. Etiam a enim et augue vehicula egestas. Quisque lobortis, quam a tristique viverra, mauris libero dapibus neque, nec interdum erat erat vel nunc.</p>
 					<a href="" class="button">Read more</a>
 				</div>
-				<div class="">
-					<h2>Pricing options</h2>
-					<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue .Praesent in interdum arcu. Phasellus diam ligula, convallis sit amet dui vitae, tincidunt volutpat nisi. Etiam a enim et augue vehicula egestas. Quisque lobortis, quam a tristique viverra, mauris libero dapibus neque, nec interdum erat erat vel nunc. 
-					Sed luctus malesuada elementum. Quisque in metus sit amet lectus sollicitudin accumsan sed eget nibh. Sed consectetur ornare porttitor. Quisque in nisl in justo imperdiet tempor a quis enim. Donec in ipsum ultricies, feugiat lectus eget, egestas nibh. Suspendisse iaculis molestie sapien, non gravida orci molestie sed. Etiam cursus lobortis metus a pretium. Quisque eros massa, placerat sit amet posuere in, aliquet non enim. Suspendisse sodales erat sed tempus lacinia.</p>
-					<a href="" class="button">View all our prices</a>
+				<div class="dark-bg2">
+					<h2>Pricing Options</h2>
+					<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue .Praesent in interdum arcu. Phasellus diam ligula, convallis sit amet dui vitae, tincidunt volutpat nisi. Etiam a enim et augue vehicula egestas. Quisque lobortis, quam a tristique viverra, mauris libero dapibus neque, nec interdum erat erat vel nunc.</p>
+					<a href="" class="button">Work with us</a>
 				</div>
 			</section>
-			<section>
-				<div class="">
+			<section class="gs-container section--hot-products dark-bg fb">
+				<div class="highlight">
 					<h2>Hot products</h2>
 					<div class="">
 						<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. </p>
 					</div>
 				</div>
-				<div class="">
-					<a href="#"><img src="" alt=""></a>
+				<div class="product-single">
+					<a class="button hot-pr-btn" href=""></a>
+					<a href="#"><img src="img/hotp1.png" alt="Product 1"></a>
 				</div>
-				<div class="">
-					<a href="#"><img src="" alt=""></a>
+				<div class="product-single">
+					<a class="button hot-pr-btn" href=""></a>
+					<a href="#"><img src="img/hotp2.png" alt="Product 2"></a>
 				</div>
-				<div class="">
-					<a href="#"><img src="" alt=""></a>
+				<div class="product-single">
+					<a class="button hot-pr-btn" href=""></a>
+					<a href="#"><img src="img/hotp3.png" alt="Product 3"></a>
 				</div>
-			</section>
-			<section class=" section--social-media">
-				<div class="gs-container social-media-fb">
+			</section><!-- End section-hotProducts -->
+			<section class="section--blank"></section><!-- Empty div -->
+			<section class="section--social-media">
+				<div class="gs-container fb">
 					<a href="https://twitter.com/"><i class="icon-twitter"></i></a>
 					<a href="https://www.facebook.com/"><i class="icon-facebook"></i></a>
 					<a href="http://instagram.com/"><i class="icon-instagram"></i></a>
 					<a href="https://vimeo.com/"><i class="icon-vimeo"></i></a>
 					<a href="https://uk.linkedin.com/"><i class="icon-linkedin"></i></a>
-				</div>
+				<div>
 			</section><!-- End section-social -->
-			<section class="section--logos">
+			<section class="section--logos u-cf">
 				<div class="gs-container fb">
-					<a href=""><img src="img/sponsor1.png" alt=""></a>
-					<a href=""><img src="img/sponsor2.png" alt=""></a>
-					<a href=""><img src="img/sponsor3.png" alt=""></a>
-					<a href=""><img src="img/sponsor4.png" alt=""></a>
+					<a href=""><i class="capsicum"></i></a>
+					<a href=""><i class="letsrace"></i></a>
+					<a href=""><i class="carling"></i></a>
+					<a href=""><i class="oz-racing"></i></a>
 				</div>
 			</section><!-- End section-sponsors -->
 		</div>
-	<footer class="u-cf">
+	<footer class="l-footer u-cf">
 			<div class="gs-container footer-fb">
-				<div class="">
+				<div class="footer-red"></div>
+				<div class="footer-logo">
 					<a href="index.html" class="logo"><img src="img/footer-logo.png" alt="3Dom Logo"></a>
 				</div>
 				<div class="footer-nav">
@@ -212,11 +265,11 @@
 				          <li><a href="blog.html">Blog</a></li>
 				          <li><a href="contact.html" >Contact</a></li>
 				          <li><a href="shop.html">Shop</a></li>
-				          <li><a href="account.html">My Account</a></li>
+				          <li><a class="various" data-fancybox-type="iframe" href="signin.html">My Account</a></li>
 				        </ul>
 				</div>
 			</div>
-				<div class="gs-container">
+				<div class="gs-container footer-priv">
 					<p><a href="#">Privacy</a></p>
 				</div>
 				<div class="gs-container footer-copy-fb">
