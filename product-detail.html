@@ -6,9 +6,6 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <link href='http://fonts.googleapis.com/css?' rel='stylesheet' type='text/css'>
 	    <link rel="stylesheet" href="css/style.css">
-	    <link rel="stylesheet" href="css/responsive.css">
-	    <link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-	    <link rel="stylesheet" href="css/owl.transitions.css">
 	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
 		<script type="text/javascript" src="js/owl.carousel.js"></script>
@@ -122,28 +119,30 @@
 		<div class="l-main u-cf">
 			<section class="gs-container grey-bg">
 				<div class="top-content-box">
-						<div class="top-title">Store<span class="top-title-red">Categories</span></div>
-					<div class="">
-						<form class="" method="GET" action="search">
-						  <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="Search store" class="">
-						</form>
-					</div>
-					<div class="">
-						<a href="">Back to previous</a>
-					</div>
+					<div class="fb">
+							<div class="top-title">Store<span class="top-title-red">Categories</span></div>
+							<div class="top-form">
+								<form class="" method="get" action="search">
+								  <input type="text" class="tftextinput" name="q" size="21" maxlength="120">
+								  <input class="button button--catssection" type="submit" value="Search store">
+								</form>
+							</div>
+							
+						</div><a class="back" href="">Back to previous</a>
+					
 				</div>
 			</section>
 			<section class="gs-container fb">
 				<div class="grey-bg product-info">
-					<div class="">
+					<div class="product-info__content">
 						<h2>FORZA  Strength Power ForceTshirt</h2>
-						<div class="price">£19.99</div>
+						<div class="price price--single">£19.99</div>
 						<p>A slim fitting Tshirt  made from raw organic 12 oz denim. The pocket lining is made from super tough ecru twill. Subtle design detailing throughout. The back pocket is internally lined with twill for extra strength. The coin pocket is designed to fit an iPhone 5. The pocket edge seams are bound for a stronger and cleaner finish. It has copper rivets throughout. Plus one signature red ‘owl’ rivet on the back pocket. Button fly. Key stress points are bar-tacked for extra strength. The hems are chain stitched. 100% organic cotton.
 						Made in Wales.</p>
 					</div>
 					<div class="">
 						<form>
-							<legend>Select Size</legend>
+							<div class="select--size">
 							<label>Select size</label>
 					    		<select>
 					    			<option>A</option>
@@ -152,7 +151,8 @@
 					    			<option>D</option>
 					    			<option>E</option>
 					    		</select><br>
-					    	<input type="submit" value="Add to basket">
+					    	</div>
+					    	<input class="button button--singleproduct" type="submit" value="Add to basket">
 						</form>
 					</div>
 					<div class="">
@@ -163,11 +163,11 @@
 						<a href=""></a>
 					</div>
 				</div>
-				<div class="">
+				<div class="product-images">
 					<div class="">
 						<img src="img/product-detail-featured.jpg " alt="">
 					</div>
-					<div class="">
+					<div class="fb">
 						<img src="img/product-detail-tn1.jpg" alt="">
 						<img src="img/product-detail-tn2.jpg" alt="">
 						<img src="img/product-detail-tn3.jpg" alt="">
@@ -178,71 +178,88 @@
 					</div>
 				</div>
 			</section>
-			<section class="gs-container">
+			<section class="gs-container suggestions">
 				<div class="">
 					<h2>You might also like</h2>
 					<p>Customers who either bought or looked at this product also looked at the below items.</p>
 				</div>
-				<div class="fb">
-					<div class="grey-bg2">
+				<div class="fb fb--grid">
+					<div class="grey-bg2 ranges-details">
 						<div class="">
-							<img src="img/product-details1.jpg" alt="">
+							<img src="img/ranges1.jpg" alt="">
 						</div>
-						<div class="">FORZA  Strength Power ForceTshirt</div>
-						<div class="">Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam</div>
-						<div clas="price">£19.99</div>
+						<div class="ranges-details__title">FORZA  Strength Power ForceTshirt</div>
+						<div class="">
+							<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam</p></div>
+						<div class="price">£19.99</div>
 						<form method="POST"> 
-							<input type="submit" value="Add to basket">
+							<input class="button button--ranges" type="submit" value="Add to basket">
 						</form>
 					</div>
-					<div class="grey-bg2">
+					<div class="grey-bg2 ranges-details">
 						<div class="">
-							<img src="img/product-details2.jpg" alt="">
+							<img src="img/ranges2.jpg" alt="">
 						</div>
-						<div class="">FORZA  Strength Power ForceTshirt</div>
-						<div class="">Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam</div>
-						<div clas="price">£19.99</div>
+						<div class="ranges-details__title">FORZA  Strength Power ForceTshirt</div>
+						<div class="">
+							<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam</p>
+						</div>
+						<div class="price">£19.99</div>
 						<form method="POST"> 
-							<input type="submit" value="Add to basket">
+							<input class="button button--ranges" type="submit" value="Add to basket">
 						</form>
 					</div>
-					<div class="grey-bg2">
+					<div class="grey-bg2 ranges-details">
 						<div class="">
-							<img src="img/product-details3.jpg" alt="">
+							<img src="img/ranges3.jpg" alt="">
 						</div>
-						<div class="">FORZA  Strength Power ForceTshirt</div>
-						<div class="">Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam</div>
-						<div clas="price">£19.99</div>
+						<div class="ranges-details__title">FORZA  Strength Power ForceTshirt</div>
+						<div class="">
+							<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam</p>
+							</div>
+						<div class="price">£19.99</div>
 						<form method="POST"> 
-							<input type="submit" value="Add to basket">
+							<input class="button button--ranges" type="submit" value="Add to basket">
 						</form>
 					</div>
-					<div class="grey-bg2">
+					<div class="grey-bg2 ranges-details">
 						<div class="">
-							<img src="img/product-details4.jpg" alt="">
+							<img src="img/ranges4.jpg" alt="">
 						</div>
-						<div class="">FORZA  Strength Power ForceTshirt</div>
-						<div class="">Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam</div>
-						<div clas="price">£19.99</div>
+						<div class="ranges-details__title">FORZA  Strength Power ForceTshirt</div>
+						<div class="">
+							<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam</p>
+							</div>
+						<div class="price">£19.99</div>
 						<form method="POST"> 
-							<input type="submit" value="Add to basket">
+							<input class="button button--ranges" type="submit" value="Add to basket">
 						</form>
 					</div>
+					
+					
+					
+					
+					
+					
 				</div>
 			</section>
 			<section class="gs-container fb">
-				<div class="grey-bg2">
-					<h2>Payment & Shipping</h2>
-					<img src="img/payment.png" alt="">
-					<p>Shipping regions include Canada, US, Europe, Australia, Japan. Contact us to get a quote for other territories.</p>
+				<div class="payment-s shop-nonfeatured">
+					<div class="shop-nonfeatured__content">
+						<h2>Payment &amp; Shipping</h2>
+						<img src="img/payment.png" alt="">
+						<p>Shipping regions include Canada, US, Europe, Australia, Japan. Contact us to get a quote for other territories.</p>
+					</div>
 				</div>
-				<div class="grey-bg2">
-					<h2>Mailing List</h2>
-					<p>Subscribe to our mailing list to stay up-to-date with promotions, new products and our community.</p>
-					<form action="#" method="GET">
-					   <input name="email" type="text" placeholder="Your Email">
-					   <input type="submit" name="submit" value="Subscribe" >
-					</form>
+				<div class="shop-nonfeatured">
+					<div class="shop-nonfeatured__content">
+						<h2>Mailing List</h2>
+						<p>Subscribe to our mailing list to stay up-to-date with promotions, new products and our community.</p>
+						<form class="fb" action="#" method="GET">
+						   <input name="email" type="text" placeholder="Your Email">
+						   <input type="submit" name="submit" value="Subscribe">
+						</form>
+					</div>
 				</div>
 			</section>
 			<section class="section--blank"></section><!-- Empty div -->
