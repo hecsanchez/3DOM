@@ -11,6 +11,8 @@
 	    <link rel="stylesheet" href="css/owl.transitions.css">
 	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<script type="text/javascript" src="js/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+		<script type="text/javascript" src="js/jquery.fancybox-media.js?v=1.0.6"></script>
 		<script type="text/javascript" src="js/owl.carousel.js"></script>
 		<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
 
@@ -134,35 +136,35 @@
 			</section>
 			<section class="gallery gs-container fb">
 				<div class="gallery__grid gallery__grid--left">
-					<a href="#"><img src="img/first-section1.jpg" alt=""></a>
-					<a href="#"><img src="img/first-section2.jpg" alt=""></a>
-					<a href="#"><img src="img/first-section3.jpg" alt=""></a>
-					<a href="#"><img src="img/first-section4.jpg" alt=""></a>
+					<a class="galleryimage" data-fancybox-group="gallery" href="img/first-section1.jpg"><img src="img/first-section1.jpg" alt=""></a>
+					<a class="galleryimage" data-fancybox-group="gallery" href="img/first-section2.jpg"><img src="img/first-section2.jpg" alt=""></a>
+					<a class="galleryimage" data-fancybox-group="gallery" href="img/first-section3.jpg"><img src="img/first-section3.jpg" alt=""></a>
+					<a class="galleryimage" data-fancybox-group="gallery" href="img/first-section4.jpg"><img src="img/first-section4.jpg" alt=""></a>
 				</div>
 				<div class="gallery__featured gallery__featured--right">
-					<a href="#"><img src="img/first-section-featured.jpg" alt=""></a>
+					<a class="galleryimage" data-fancybox-group="gallery" href="img/first-section-featured.jpg"><img src="img/first-section-featured.jpg" alt=""></a>
 				</div>
 			</section>
 			<section class="gallery gs-container fb">
 				<div class="gallery__featured gallery__featured--left">
-					<a href="#"><img src="img/second-section-featured.jpg" alt="" class="big-img-first"></a>
+					<a class="galleryimage" data-fancybox-group="gallery" href="img/first-section-featured.jpg"><img src="img/second-section-featured.jpg" alt="" class="big-img-first"></a>
 				</div>
 				<div class="gallery__grid gallery__grid--right">
-					<a href="#"><img src="img/second-section1.jpg" alt=""></a>
-					<a href="#"><img src="img/second-section2.jpg" alt=""></a>
-					<a href="#"><img src="img/second-section3.jpg" alt=""></a>
-					<a href="#"><img src="img/second-section4.jpg" alt=""></a>
+					<a class="galleryimage" data-fancybox-group="gallery" href="img/second-section1.jpg"><img src="img/second-section1.jpg" alt=""></a>
+					<a class="galleryimage" data-fancybox-group="gallery" href="img/second-section2.jpg"><img src="img/second-section2.jpg" alt=""></a>
+					<a class="galleryimage" data-fancybox-group="gallery" href="img/second-section3.jpg"><img src="img/second-section3.jpg" alt=""></a>
+					<a class="galleryimage" data-fancybox-group="gallery" href="img/second-section4.jpg"><img src="img/second-section4.jpg" alt=""></a>
 				</div>
 			</section>
 			<section class="gallery gs-container fb">
 				<div class="gallery__grid gallery__grid--left">
-					<a href="#"><img src="img/first-section1.jpg" alt=""></a>
-					<a href="#"><img src="img/first-section2.jpg" alt=""></a>
-					<a href="#"><img src="img/first-section3.jpg" alt=""></a>
-					<a href="#"><img src="img/first-section4.jpg" alt=""></a>
+					<a class="galleryimage" data-fancybox-group="gallery" href="img/first-section1.jpg"><img src="img/first-section1.jpg" alt=""></a>
+					<a class="galleryimage" data-fancybox-group="gallery" href="img/first-section2.jpg"><img src="img/first-section2.jpg" alt=""></a>
+					<a class="galleryimage" data-fancybox-group="gallery" href="img/first-section3.jpg"><img src="img/first-section3.jpg" alt=""></a>
+					<a class="galleryimage" data-fancybox-group="gallery" href="img/first-section4.jpg"><img src="img/first-section4.jpg" alt=""></a>
 				</div>
 				<div class="gallery__featured gallery__featured--right">
-					<a href="#"><img src="img/first-section-featured.jpg" alt=""></a>
+					<a class="galleryimage" data-fancybox-group="gallery" href="img/first-section-featured.jpg"><img src="img/first-section-featured.jpg" alt=""></a>
 				</div>
 			</section>
 			<section class="gs-container section--hot-products dark-bg fb">
@@ -243,6 +245,23 @@
 				closeClick	: false,
 				openEffect	: 'none',
 				closeEffect	: 'none'
+			});
+		});
+		$(document).ready(function() {
+			$(".galleryimage").fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
 			});
 		});
 		</script>

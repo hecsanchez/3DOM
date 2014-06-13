@@ -1,50 +1,49 @@
-function openOverlay(olEl) {
-    $oLay = $(olEl);
-    
-    if ($('#overlay-shade').length == 0)
-        $('body').prepend('<div id="overlay-shade"></div>');
+   function afterOWLinit() {
 
-    $('#overlay-shade').fadeTo(300, 0.6, function() {
-        var props = {
-            oLayWidth       : $oLay.width(),
-            scrTop          : $(window).scrollTop(),
-            viewPortWidth   : $(window).width()
-        };
+        // adding A to div.owl-page
+        $('.owl-controls .owl-page').append('<a class="item-link" href="#"/>');
 
-        var leftPos = (props.viewPortWidth - props.oLayWidth) / 2;
+        var pafinatorsLink = $('.owl-controls .item-link');
 
-        $oLay
-            .css({
-                display : 'block',
-                opacity : 0,
-                top : '-=300',
-                left : leftPos+'px'
-            })
-            .animate({
-                top : props.scrTop + 40,
-                opacity : 1
-            }, 600);
-    });
-}
+        /**
+         * this.owl.userItems - it's your HTML <div class="item"><img src="http://www.ow...t of us"></div>
+         */
+        $.each(this.owl.userItems, function (i) {
 
-function closeOverlay() {
-    $('.overlay').animate({
-        top : '-=300',
-        opacity : 0
-    }, 400, function() {
-        $('#overlay-shade').fadeOut(300);
-        $(this).css('display','none');
-    });
-}
+            $(pafinatorsLink[i])
+                // i - counter
+                // Give some styles and set background image for pagination item
+                .css({
+                    'background': 'url(' + $(this).find('img').attr('src') + ') center center no-repeat',
+                    '-webkit-background-size': 'cover',
+                    '-moz-background-size': 'cover',
+                    '-o-background-size': 'cover',
+                    'background-size': 'cover'
+                })
+                // set Custom Event for pagination item
+                .click(function () {
+                    owl.trigger('owl.goTo', i);
+                });
 
-$('#overlay-shade, .overlay a').live('click', function(e) {
-    closeOverlay();
-    if ($(this).attr('href') == '#') e.preventDefault();
-});
+        });
 
 
-// Usage
-$('#overlaylaunch-inAbox').click(function(e) {
-   openOverlay('#overlay-inAbox');
-   e.preventDefault();
+
+        // add Custom PREV NEXT controls
+        $('.owl-pagination').prepend('<a href="#prev" class="prev-owl"/>');
+        $('.owl-pagination').append('<a href="#next" class="next-owl"/>');
+
+
+        // set Custom event for NEXT custom control
+        $(".next-owl").click(function () {
+            owl.trigger('owl.next');
+        });
+
+        // set Custom event for PREV custom control
+        $(".prev-owl").click(function () {
+            owl.trigger('owl.prev');
+        });
+
+    }
+
 });

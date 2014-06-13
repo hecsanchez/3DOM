@@ -9,6 +9,74 @@
 	    <link rel="stylesheet" href="css/responsive.css">
 	    <link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 	    <link rel="stylesheet" href="css/owl.transitions.css">
+	    <style>
+	   #owl-demo .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.owl-theme .owl-controls {
+    position: relative;
+}
+
+.owl-theme .owl-controls .item-link {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 40px;
+    margin: 0 2px;
+    border-bottom: 4px solid #ccc;
+    outline: none;
+}
+
+.owl-theme .owl-controls .item-link:focus {
+    -webkit-box-shadow: 0 0 8px #cc4895;
+    -moz-box-shadow: 0 0 8px #cc4895;
+    box-shadow: 0 0 8px #cc4895;
+    outline: none;
+}
+
+.owl-theme .owl-controls .active .item-link {
+    border-bottom: 4px solid #cc4895;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    display: none;
+}
+
+.owl-theme .prev-owl,
+.owl-theme .next-owl {
+    position: absolute;
+    top: 5px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #c0c0c0;
+    outline: none;
+}
+
+.owl-theme .prev-owl:focus,
+.owl-theme .next-owl:focus {
+    -webkit-box-shadow: 0 0 8px #cc4895;
+    -moz-box-shadow: 0 0 8px #cc4895;
+    box-shadow: 0 0 8px #cc4895;
+}
+
+.owl-theme .prev-owl {
+    left: 24px;
+}
+
+.owl-theme .next-owl {
+    right: 24px;
+}
+
+
+.slideshow{
+	width: 60%;
+}
+</style>
 	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
 		<script type="text/javascript" src="js/owl.carousel.js"></script>
@@ -183,16 +251,13 @@
 						</div>
 					</div>
 				</div>
-				<div class="grey-bg">
-					<div class="">
-						<img src="img/services-custom-design-featured.jpg" alt="">
-						<h2>Image Showcase</h2>
-					</div>
-					<div class="">
-						<img src="img/services-customd-tn1.jpg" alt="">
-						<img src="img/services-customd-tn2.jpg" alt="">
-						<img src="img/services-customd-tn3.jpg" alt="">
-						<img src="img/services-customd-tn4.jpg" alt="">
+				<div class="grey-bg slideshow">
+					<div id="custom-pag-place"></div>
+					<div id="owl-demo" class="owl-carousel owl-theme">
+						<div class="item"><img src="img/services-customd-tn1.jpg" alt=""></div>
+						<div class="item"><img src="img/services-customd-tn2.jpg" alt=""></div>
+						<div class="item"><img src="img/services-customd-tn3.jpg" alt=""></div>
+						<div class="item"><img src="img/services-customd-tn4.jpg" alt=""></div>
 					</div>
 				</div>
 			</section>
@@ -238,7 +303,7 @@
 					<a href="http://instagram.com/"><i class="icon-instagram"></i></a>
 					<a href="https://vimeo.com/"><i class="icon-vimeo"></i></a>
 					<a href="https://uk.linkedin.com/"><i class="icon-linkedin"></i></a>
-				<div>
+				</div>
 			</section><!-- End section-social -->
 			<section class="section--logos u-cf">
 				<div class="gs-container fb">
@@ -291,6 +356,63 @@
 				closeEffect	: 'none'
 			});
 		});
+		</script>
+		<script>
+	var owl;
+
+$(document).ready(function () {
+
+    owl = $("#owl-demo");
+
+    owl.owlCarousel({
+
+        navigation: false, // Show next and prev buttons
+        slideSpeed: 300,
+        paginationSpeed: 400,
+        singleItem: true,
+        transitionStyle : "fadeUp",
+        afterInit: afterOWLinit // do some work after OWL init
+    });
+    
+    
+
+    
+    function afterOWLinit() {
+
+        // adding A to div.owl-page
+        $('.owl-controls .owl-page').append('<div class="item-link"/>');
+
+        var pafinatorsLink = $('.owl-controls .item-link');
+
+        /**
+         * this.owl.userItems - it's your HTML <div class="item"><img src="http://www.ow...t of us"></div>
+         */
+        $.each(this.owl.userItems, function (i) {
+
+            $(pafinatorsLink[i])
+                // i - counter
+                // Give some styles and set background image for pagination item
+                .css({
+                    'background': 'url(' + $(this).find('img').attr('src') + ') center center no-repeat',
+                    '-webkit-background-size': 'cover',
+                    '-moz-background-size': 'cover',
+                    '-o-background-size': 'cover',
+                    'background-size': 'cover'
+                })
+                // set Custom Event for pagination item
+                .click(function () {
+                    owl.trigger('owl.goTo', i);
+                });
+
+        });
+
+
+
+        
+
+    }
+
+});
 		</script>
 	 </body>
 </html>
