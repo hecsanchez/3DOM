@@ -562,6 +562,11 @@ h3{
 	padding-left: 1.3em;
 }
 
+.top-content-box__intro h2, .services-wwd h2{
+	font-size: 26px;
+	font-weight: 300;
+}
+
 @media screen and (min-width: 550px){
 
   .featured__single__content h2 {
@@ -1950,10 +1955,7 @@ border-bottom: 1px solid #636367;
 padding-bottom: 1em;
 }
 
-.top-content-box__intro h2{
-	font-size: 26px;
-	font-weight: 300;
-}
+
 
 .blog-header, .blog-link{
 	color: #cc241c;
@@ -2445,6 +2447,8 @@ width: 46%;
 
 .services-wwd {
 	max-width: 30%;
+	padding: 0 .5em;
+	border-top: 3px solid #797B7F;
 }
 
 .images-case-studies, .article-case-studies{
@@ -2597,6 +2601,73 @@ a#overlaylaunch-inAbox {
 /*------------------------------------*\
     SLIDER / CAROUSEL
 \*------------------------------------*/
+
+ #owl-demo .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.owl-theme .owl-controls {
+    position: relative;
+}
+
+.owl-theme .owl-controls .item-link {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 40px;
+    margin: 0 2px;
+    border-bottom: 4px solid #ccc;
+    outline: none;
+}
+
+.owl-theme .owl-controls .item-link:focus {
+    -webkit-box-shadow: 0 0 8px #cc4895;
+    -moz-box-shadow: 0 0 8px #cc4895;
+    box-shadow: 0 0 8px #cc4895;
+    outline: none;
+}
+
+.owl-theme .owl-controls .active .item-link {
+    border-bottom: 4px solid #cc4895;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    display: none;
+}
+
+.owl-theme .prev-owl,
+.owl-theme .next-owl {
+    position: absolute;
+    top: 5px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #c0c0c0;
+    outline: none;
+}
+
+.owl-theme .prev-owl:focus,
+.owl-theme .next-owl:focus {
+    -webkit-box-shadow: 0 0 8px #cc4895;
+    -moz-box-shadow: 0 0 8px #cc4895;
+    box-shadow: 0 0 8px #cc4895;
+}
+
+.owl-theme .prev-owl {
+    left: 24px;
+}
+
+.owl-theme .next-owl {
+    right: 24px;
+}
+
+
+.slideshow{
+	width: 60%;
+}
 
 .owl-carousel .owl-wrapper:after {
 	content: ".";
