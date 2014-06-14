@@ -250,7 +250,7 @@
 					</div>
 				</div>
 				<div class="service-po dark-bg2">
-					<h2 class="heading--grey">Pricing Options</h2>
+					<a href=""><h2 class="heading--grey">Pricing Options</h2></a>
 					<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue .Praesent in interdum arcu. Phasellus diam ligula, convallis sit amet dui vitae, tincidunt volutpat nisi. Etiam a enim et augue vehicula egestas. Quisque lobortis, quam a tristique viverra, mauris libero dapibus neque, nec interdum erat erat vel nunc.</p>
 					<a href="" class="button button--service-po">View all our prices</a>
 				</div>
@@ -339,6 +339,16 @@
 		});
 		</script>
 		<script>
+		$(document).ready(function() {
+		  var owl = $("#partners");
+
+		  owl.owlCarousel({
+		  	autoPlay : 2000,
+		     items : 4, //10 items above 1000px browser width
+		      itemsDesktop : [1000,4] //5 items between 1000px and 901px
+
+		  });
+		});
 	$(document).ready(function() {
  
   var sync1 = $("#sync1");
@@ -347,6 +357,7 @@
   sync1.owlCarousel({
     singleItem : true,
     slideSpeed : 1000,
+    navigation: true,
     pagination:false,
     transitionStyle : "fadeUp",
     afterAction : syncPosition,
@@ -354,18 +365,18 @@
   });
  
   sync2.owlCarousel({
-  	navigation: true,
     items : 4,
     itemsDesktop      : [1199,4],
     itemsDesktopSmall     : [979,4],
     itemsTablet       : [768,4],
-    itemsMobile       : [479,4],
+    itemsMobile       : [479,2],
     pagination:false,
     responsiveRefreshRate : 100,
     afterInit : function(el){
       el.find(".owl-item").eq(0).addClass("synced");
     }
   });
+
  
   function syncPosition(el){
     var current = this.currentItem;
