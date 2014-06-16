@@ -117,7 +117,7 @@
 			        </ul>
 			      </nav>
 			  </div>
-			<div>
+			</div>
 		</header>
 
 		<div class="l-main">
@@ -230,14 +230,15 @@
 					<a href="http://instagram.com/"><i class="icon-instagram"></i></a>
 					<a href="https://vimeo.com/"><i class="icon-vimeo"></i></a>
 					<a href="https://uk.linkedin.com/"><i class="icon-linkedin"></i></a>
-				<div>
+				</div>
 			</section><!-- End section-social -->
 			<section class="section--logos u-cf">
-				<div class="gs-container fb">
-					<a href=""><i class="capsicum"></i></a>
-					<a href=""><i class="letsrace"></i></a>
-					<a href=""><i class="carling"></i></a>
-					<a href=""><i class="oz-racing"></i></a>
+				<div class="gs-container fb owl-carousel" id="partners">
+					<div class="section--logos__item"><a href=""><img class="item--grey" src="img/sponsor1.png"><img class="item--colour" src="img/capsicum.png"></a></div>
+					<div class="section--logos__item"><a href=""><img class="item--grey" src="img/sponsor2.png"><img class="item--colour" src="img/lets-race.png"></a></div>
+					<div class="section--logos__item"><a href=""><img class="item--grey" src="img/sponsor3.png"><img class="item--colour" src="img/carling.png"></a></div>
+					<div class="section--logos__item"><a href=""><img class="item--grey" src="img/sponsor4.png"><img class="item--colour" src="img/oz-racing.png"></a></div>
+					<div class="section--logos__item"><a href=""><img class="item--grey" src="img/sponsor4.png"><img class="item--colour" src="img/oz-racing.png"></a></div>
 				</div>
 			</section><!-- End section-sponsors -->
 		</div>
@@ -282,6 +283,16 @@
 				openEffect	: 'none',
 				closeEffect	: 'none'
 			});
+		});
+		$(document).ready(function() {
+		  var owl = $("#partners");
+
+		  owl.owlCarousel({
+		  	autoPlay : 2000,
+		     items : 4, //10 items above 1000px browser width
+		      itemsDesktop : [1000,4] //5 items between 1000px and 901px
+
+		  });
 		});
 		</script>
 				<script type="text/javascript">

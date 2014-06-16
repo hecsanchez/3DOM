@@ -10,9 +10,11 @@
 	    <link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 	    <link rel="stylesheet" href="css/owl.transitions.css">
 	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 		<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
 		<script type="text/javascript" src="js/owl.carousel.js"></script>
 		<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
+		<script type="text/javascript" src="js/kendo.min.js" ></script>
 
 	  </head>
 	<body>
@@ -140,8 +142,8 @@
 				</div>
 			</section>
 			<section class="gs-container fb">
-				<div class="grey-bg service-opt">
-					<div class="">
+				<div class="service-opt">
+					<div class="grey-bg">
 						<div class="">
 							<h2>Service options</h2>
 							<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue .Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non velit sit amet ante pellentesque egestas a id sapien. Nunc et posuere mi. Proin eget molestie ipsum. Curabitur eget dignissim est, eget venenatis tortor. Mauris molestie convallis mi,et posuere libero ultricies eget. Vestibulum et imperdiet libero.</p>
@@ -157,48 +159,58 @@
 								<li>Colour change wraps</li>
 							</ul>
 						</div>
-						<div class="grey-bg fb">
-							<div class="">
+						<div class="service-opt__video grey-bg fb">
+							<div class="video-thumbnail">
 								<!-- Video-->
-								<img src="img/services-e-video-holder.jpg">
+								<img src="img/video-thumbnail.jpg">
+								<div class="video-thumbnail__over">
+									<a href=""><img src="img/video-play.png"></a>
+									<a class="video-play" href="">Play demo</a>
+								</div>
 							</div>
-							<div class="">
+							<div class="video-text">
 								<h2>Use our 3D App</h2>
 								<a href=""><h2>Get started now</h2></a>
 								<p>Visualize your ideas in 3D for a more acurate quote</p>
 							</div>
 						</div>
 					</div>
-					<div class="">
-						<div class="">
-							<img src="img/services-e-glink.jpg" alt="">
+					<div class="gallery-box">
+						<div>
+						<div class="non-featured__single__img">
+								<img src="img/home-gallery.jpg" alt="">
+						</div>		
+						<div class="gallery-box__content">
+							<h2 class="">Gallery</h2>
+							<a class="button" href="#">View the full gallery</a>
 						</div>
-						<div></div><!-- Dots -->
-						<h2>Gallery</h2>
-						<a class="" href="gallery.html">View the full gallery</a>
+					</div>
 					</div>
 				</div>
 				<div class="orm grey-bg booking-form">
 					<legend>Get a quote</legend>
-					<div class="">
-						<p>Already a member?<a href="sign-in.html">Sign in</a>for a custom quote.Not a member?Want to sign up?<a href="">Click here<a></p>
+					<div class="booking-form__intro">
+						<p>Already a member? <a href="sign-in.html">Sign in</a> for a custom quote.Not a member?Want to sign up? <a href="">Click here</a></p>
 					</div>
-					<label>Select service</label>
-				    		<select>
-				    			<option>Vinyl Wraps</option>
-				    			<option>B</option>
-				    			<option>C</option>
-				    			<option>D</option>
-				    			<option>E</option>
-				    		</select><br>
-			    	<form action="#" method="GET" name="">
-			    		<ul>
+					<form action="#" method="GET" name="">
+						<ul>
+							<li>
+								<label class="required">Select service</label>
+					    		<select>
+					    			<option>Vinyl Wraps</option>
+					    			<option>B</option>
+					    			<option>C</option>
+					    			<option>D</option>
+					    			<option>E</option>
+					    		</select><br>
+			    			</li>
+			    		
 			    			<li>
-			    				<label>First Name</label>
+			    				<label class="required">First Name</label>
 			    				<input type="text" name="name">
 			    			</li>
 			    			<li>
-			    				<label>Second Name</label>
+			    				<label class="required">Second Name</label>
 			    				<input type="text" name="name">
 			    			</li>
 			    			<li>
@@ -206,23 +218,25 @@
 			    				<input type="text" name="phone">
 			    			</li>
 			    			<li>
-			    				<label>Email address</label>
+			    				<label class="required">Email address</label>
 			    				<input type="text" name="email">
 			    			</li>
 			    			<li>
-			    				<label>Postcode<br>Let us fins a supplier near you</label>
+			    				<label class="required">Postcode<br>Let us fins a supplier near you</label>
 			    				<input type="text" name="name">
 			    			</li>
 			    			<li>
-			    				<label>Preferred date(s)</label>
-			    				<input type="datetime-local" name="time"><span>to</span><input type="datetime-local" name="time">
+			    				<label class="required">Preferred date(s)</label>
+			    				<div class="date-container">
+				    				<input type="text" id="datepicker"><span>to</span><input type="text" id="datepicker2">
+				    			</div>
 			    			</li>
-			    			<li>
-			    				<label>Quote requirement</label>
+			    			<li class="textarea">
+			    				<label class="required">Quote requirement</label>
 			    				<textarea name="message" rows="5" cols="25"></textarea>
 			    			</li>
 			    			<li>
-			    				<label>Select vehicle make</label>
+			    				<label class="required">Select vehicle make</label>
 				    			<select>
 					    			<option>A</option>
 					    			<option>B</option>
@@ -232,7 +246,7 @@
 					    		</select>
 			    			</li>
 			    			<li>
-			    				<label>Select vehicle model</label>
+			    				<label class="required">Select vehicle model</label>
 					    		<select>
 					    			<option>A</option>
 					    			<option>B</option>
@@ -242,7 +256,7 @@
 					    		</select>
 			    			</li>
 			    			<li>
-			    				<input type="submit" value="Get a quote" class="booking-submit">
+			    				<input type="submit" value="Get a quote" class="button booking-submit">
 			    			</li>
 			    		</ul>    	
 			    	</form>
@@ -259,11 +273,12 @@
 				<div>
 			</section><!-- End section-social -->
 			<section class="section--logos u-cf">
-				<div class="gs-container fb">
-					<a href=""><i class="capsicum"></i></a>
-					<a href=""><i class="letsrace"></i></a>
-					<a href=""><i class="carling"></i></a>
-					<a href=""><i class="oz-racing"></i></a>
+				<div class="gs-container fb owl-carousel" id="partners">
+					<div class="section--logos__item"><a href=""><img class="item--grey" src="img/sponsor1.png"><img class="item--colour" src="img/capsicum.png"></a></div>
+					<div class="section--logos__item"><a href=""><img class="item--grey" src="img/sponsor2.png"><img class="item--colour" src="img/lets-race.png"></a></div>
+					<div class="section--logos__item"><a href=""><img class="item--grey" src="img/sponsor3.png"><img class="item--colour" src="img/carling.png"></a></div>
+					<div class="section--logos__item"><a href=""><img class="item--grey" src="img/sponsor4.png"><img class="item--colour" src="img/oz-racing.png"></a></div>
+					<div class="section--logos__item"><a href=""><img class="item--grey" src="img/sponsor4.png"><img class="item--colour" src="img/oz-racing.png"></a></div>
 				</div>
 			</section><!-- End section-sponsors -->
 		</div>
@@ -309,6 +324,29 @@
 				closeEffect	: 'none'
 			});
 		});
+		$(document).ready(function() {
+		  var owl = $("#partners");
+
+		  owl.owlCarousel({
+		  	autoPlay : 2000,
+		     items : 4, //10 items above 1000px browser width
+		      itemsDesktop : [1000,4] //5 items between 1000px and 901px
+
+		  });
+		});
+		$(function() {
+		    $( "#datepicker" ).datepicker();
+		  });
+		$(function() {
+		    $( "#datepicker2" ).datepicker();
+		  });
+		$('select').kendoDropDownList();
+		var size = $("#size").data("kendoDropDownList");
+		$(function() {
+				$('nav#nav').mmenu({
+					position : "right"
+				});
+			});
 		</script>
 		
 	</body>
