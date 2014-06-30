@@ -3,52 +3,25 @@
 	<head>
 	  	<meta charset="utf-8">
 	    <title>3DOM Wraps</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <link href='http://fonts.googleapis.com/css?' rel='stylesheet' type='text/css'>
 	    <link rel="stylesheet" href="css/style.css">
+	    <link rel="stylesheet" href="css/responsive.css">
+	    <link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	    <link rel="stylesheet" href="css/owl.transitions.css">
 	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-		<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<script type="text/javascript" src="js/owl.carousel.js"></script>
+		<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
+
 	  </head>
 	<body>
+		<div>
 			<header class="l-header u-cf">
 			<div class="l-header__top u-cf">
-				<div class="gs-container fb">
-					<div class="l-header__top__logo">
-						<a href="index.html" class="logo"><img src="img/logo.png"></a>
-					</div>
-					<div class="l-header__top__nav">
-						<nav class="">
-							<ul class="fb">
-						        <li>Customise</li>
-						        <li>Design</li>
-						        <li>Sponsorship</li>
-			        		</ul>
-						<nav>
-					</div>
-					<div class="l-header__top__quote">
-						<div class="quote-select">Get a quote<i></i></div>
-						<div class="quote-dropdown">
-							<span class="">Select a service</span>
-							<ul>
-								<li>Vinyl Wrapping</li>
-								<li>Paint Protections</li>
-								<li>Vehicle detailing</li>
-								<li>Motorsport Transport</li>
-							</ul>
-							<ul>
-								<li>UK</li>
-								<li>US</li>
-								<li>AUS</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="l-header__nav u-cf">
-				<div class="gs-container">
-					<nav class="main-nav">
+				<nav id="nav" class="mobile-nav">
 			        <ul class="fb">
-			          <li><a href="index.html">Home</a></li>
+			          <li class="selected"><a href="index.html">Home</a></li>
 			          <li><a href="services.html">Services</a></li>
 			          <li><a href="gallery.html">Gallery</a></li>
 			          <li><a href="case-studies.html" >Case Studies</a></li>
@@ -67,8 +40,80 @@
 						        <li><a href="shop.html">Wall Vinyl</a>
 						        <li><a href="shop.html">Artwork</a>
 			          		</ul>
+			          	</li>
+			          	<li><a class="various" data-fancybox-type="iframe" href="sign-in.html">My Account</a></li>
+			          	<li><a href="#">Get a quote</a>
+			          		<ul>
+								<li>Vinyl Wrapping</li>
+								<li>Paint Protections</li>
+								<li>Vehicle detailing</li>
+								<li>Motorsport Transport</li>
+								<li>UK</li>
+								<li>USA</li>
+								<li>AUS</li>
+							</ul>
+						</li>  
+			        </ul>
+			      </nav>
+				<div class="gs-container fb">
+					<div class="l-header__top__logo">
+						<a href="index.html" class="logo"><img src="img/logo.png"></a>
+					</div>
+					
+					<div class="l-header__top__nav">
+							<ul class="tagline fb">
+						        <li>Customise</li>
+						        <li>Design</li>
+						        <li>Sponsorship</li>
+						    </ul>
+					</div>
+					<div class="l-header__top__navicon">
+						<a href="#nav">Menu<i class="icon-list"></i></a>
+					</div>
+					<div class="l-header__top__quote">
+						<div class="quote-select"><span>Get a quote</span><i class="arrow-down"></i></div>
+						<div class="quote-dropdown">
+							<span class="nb">Select a service</span>
+							<ul class="nl">
+								<li><a href="#">Vinyl Wrapping</a></li>
+								<li><a href="#">Paint Protections</a></li>
+								<li><a href="#">Vehicle detailing</a></li>
+								<li><a href="#">Motorsport Transport</a></li>
+							</ul>
+							<ul class="geo fb">
+								<li><a href="#">UK</a></li>
+								<li class="usa"><a href="#">USA</a></li>
+								<li><a href="#">AUS</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="l-header__nav u-cf">
+				<div class="gs-container">
+					<nav class="main-nav">
+			        <ul class="fb">
+			          <li><a href="index.html">Home</a></li>
+			          <li><a href="services.html">Services</a></li>
+			          <li><a href="gallery.html">Gallery</a></li>
+			          <li><a href="case-studies.html" >Case Studies</a></li>
+			          <li><a href="pricing.html">Pricing</a></li>
+			          <li><a href="blog.html">Blog</a></li>
+			          <li><a href="contact.html">Contact</a></li>
+			          <li class="featured-link"><a href="shop.html">Shop</a>
+			          		<ul class="sub-nav">
+			          			<li><a href="index.html">Bikes</a></li>
+						        <li><a href="services.html">Cars & Vans</a></li>
+						        <li><a href="gallery.html">Helmets</a></li>
+						        <li><a href="case-studies.html" >Car Care</a></li>
+						        <li><a href="pricing.html">Motorsport</a></li>
+						        <li><a href="blog.html">Apparel</a></li>
+						        <li><a href="contact.html">Gift Cards</a></li>
+						        <li><a href="shop.html">Wall Vinyl</a>
+						        <li><a href="shop.html">Artwork</a>
+			          		</ul>
 			          </li>
-			          <li><a class="various" data-fancybox-type="iframe" href="sign-in.html">My Account</a></li>
+			          <li class="featured-link"><a class="various" data-fancybox-type="iframe" href="sign-in.html">My Account</a></li>
 			        </ul>
 			      </nav>
 			  </div>
@@ -87,14 +132,14 @@
 					</div>
 				</div>
 			</section>
-			<section class="gs-container grey-bg fb">
+			<section class="gs-container grey-bg fb section--step">
 				<div class="b-number">1.</div>
 				<div class="b-how-to">
 					<div class="how-title"> Join 3Dom Wraps</div>
 					<p>Sign Up to one of our plans depending on the service you require, or simply create a free account and try them all, and give us some details about you to make your experience of our products as effective as possible. Should you have any questions about our accounts, please see our pricing page or contact us for more details</p>
 				</div>
 			</section>
-			<section class="gs-container grey-bg fb">
+			<section class="gs-container grey-bg fb section--step">
 				<div class="b-number">2.</div>
 				<div class="b-how-to">
 					<div class="how-title">Create your project</div>
@@ -103,50 +148,50 @@
 					customise and save your progress.</p>
 				</div>
 			</section>
-			<section class="gs-container grey-bg fb">
+			<section class="gs-container grey-bg fb section--step">
 				<div class="b-number">3.</div>
 				<div class="b-how-to">
 					<div class="how-title">Load Sponsor Values</div>
 					<p>Once in the app with your chosen model, you can choose Sponsor Values app to price up the total value of that item to suit your sponsorship needs. For example if you are working on your Car Sponsorship package, you simply put in the total value you require from sponsors for the vehicle sponsorship package. This will then calculate the value of each area of the vehicle using our advanced research techniques.</p>
 				</div>
 			</section>
-			<section class="gs-container grey-bg fb">
+			<section class="gs-container grey-bg fb section--step">
 				<div class="b-number">4.</div>
 				<div class="b-how-to">
 					<div class="how-title">Load Sponsorship </div>
 					<p>You can now go to the Sponsorship app and position your logos on your model, depending where you wish each brand or sponsor to feature. When you do this, you will see a real time value for each logo appear. If you have 1 logo in an area, this will calculate the full price. once more than one logo features in each area, its size will determine the value compared to the other logos.</p>
 				</div>
 			</section>
-			<section class="gs-container grey-bg fb">
+			<section class="gs-container grey-bg fb section--step">
 				<div class="b-number">5.</div>
 				<div class="b-how-to">
-					<h1>Load Presentation app</h1>
+					<div class="how-title">Load Presentation app</div>
 					<p>Once you are happy with your logos and the value of your Sponsorship, you can move on to creating all of your stunning screenshots and images for your presentation. These will all save into your Gallery for this project and will be available to you when creating your Online Sponsorship Presentation.</p>
 				</div>
 			</section>
-			<section class="gs-container grey-bg fb">
+			<section class="gs-container grey-bg fb section--step">
 				<div class="b-number">6.</div>
 				<div class="b-how-to">
-					<div class="how-title">Follow the export process</div
+					<div class="how-title">Follow the export process</div>
 					<p>Finally it is time to create your Online Sponsorship Presentation. SImply Export your project and follow the simple form process, select your screenshot images for inclusion in the Presentation until finally your presentation is complete.</p>
 				</div>
 			</section>
-			<section class="gs-container grey-bg fb">
+			<section class="gs-container grey-bg fb section--step">
 				<div class="b-number">7.</div>
 				<div class="b-how-to">
 					<div class="how-title">Get yourself noticed</div>
 					<p>Now its time to share your Presentation and 3D creations with potential sponsors. Share your screenshots on social media to build interest, or keep them private until you announce your success stories. Your presentation will come as a PDF to be emailed out directly from 3Dom Wraps and also as a web link that can also be sent via our 3Dom Wraps emailing system.</p>
 				</div>
 			</section>
-			<section class="gs-container grey-bg fb">
+			<section class="gs-container grey-bg fb section--step">
 				<div class="b-number">8.</div>
 				<div class="b-how-to">
 					<div class="how-title">Additional options</div>
 					<p>Now you have created your Presentation, you are well on the way to your racing season. Its time to get Quotes for your vinyl livery, find your transportation to the track, customise and order some team kit, create your marketing emails to keep your fans and sponsors up to date and begin working in your Advanced Race Dashboard. You can do all of this with us, check back to our Services page for more info. Your season starts now!</p>
 				</div>
 			</section>
-		</div>
-		<section class="gs-container red-bg">
+		
+		<section class="gs-container red-bg section--step__last">
 			<div class="red-title">Finished!</div>
 				<div class="finished-text">Now its time to share your Presentation and 3D creations with potential sponsors. Share your screenshots on social media to build interest, or keep them private until you announce your success stories. Your presentation will come as a PDF to be emailed out directly from 3Dom Wraps and also as a web link that can also be sent via our 3Dom Wraps emailing system.</div>
 		</section>
@@ -210,6 +255,12 @@
 				closeEffect	: 'none'
 			});
 		});
+			$(function() {
+				$('nav#nav').mmenu({
+					position : "right"
+				});
+			});
 		</script>
+	</div>
 	</body>
 </html>

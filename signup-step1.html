@@ -131,42 +131,46 @@
 					</div>
 				</div>
 			</section>
-			<section class="gs-container grey-bg fb">
-				<div class="">
-					<div class="top-title">Step<span class="top-title-red">1</span></div>
-					<div class="form">
-				    	<form action="#" method="GET" name="">
-				    		<ul>
-				    			<li>
-				    				<label>Select username</label>
-				    				<input type="text" name="name">
-				    			</li>
-				    			<li>
-				    				<label>Select a password</label>
-				    				<input type="password" name="name">
-				    			</li>
-				    			<li>
-				    				<label>Retype password</label>
-				    				<input type="password" name="name">
-				    			</li>
-				    		</ul>
-				    	</form>
-					</div>
-				</div>
-				<div class="">
-					<div class="">
-						<span>Use social media to sign up</span>
-					<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus.</p>
-					</div>
-					<div class="">
-						<div><a href="https://twitter.com/"><img src="" alt=""></a></div>
-						<div><a href="https://www.facebook.com/"><img src="" alt=""></a></div>
-					</div>
-				</div>
-			</section>
 			<section class="gs-container grey-bg">
-				<input type="submit" value="Get a quote">
+				<div class=" signUpBox fb">
+					<div class="signUpBox__steps">
+						<div class="top-title">Step<span class="top-title-red">1</span></div>
+						<p>User info</p>
+						<div class="form form--step__1">
+					    	<form action="#" method="GET" name="">
+					    		<ul>
+					    			<li>
+					    				<label class="required">Select username</label>
+					    				<input type="text" name="name">
+					    			</li>
+					    			<li>
+					    				<label class="required">Select a password</label>
+					    				<input type="password" name="name">
+					    			</li>
+					    			<li>
+					    				<label class="required">Retype password</label>
+					    				<input type="password" name="name">
+					    			</li>
+					    		</ul>
+					    	</form>
+						</div>
+					</div>
+					<div class="signUpBox__social">
+						<div class="top-title">Use social media <span class="red">to sign up</span></div>
+						<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus.</p>
+						
+						<div class="signUpBox__buttons">
+							<div class="signUpBox__fb"><a href="https://www.facebook.com/"><i class="icon-facebook"></i> Sign up with Facebook</a></div>
+							<div class="signUpBox__tw"><a href="https://www.twitter.com/"><i class="icon-twitter"></i> Sign Up with Twitter</a></div>
+						</div>
+					</div>
+
+				</div>
+				<div class="signUpBtn">
+					<a class="button">Sign up</a>
+				</div>
 			</section>
+				
 			<section class="gs-container section--hot-products dark-bg fb">
 				<div class="highlight">
 					<h2>Hot products</h2>
@@ -247,6 +251,13 @@
 				closeEffect	: 'none'
 			});
 		});
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				$('nav#nav').mmenu({
+					position : "right"
+				});
+			});
 		</script>
 	 </body>
 </html>

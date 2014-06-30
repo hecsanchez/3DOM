@@ -132,7 +132,7 @@
 				</div>
 			</section>
 			<section class="gs-container fb">
-				<div class="work-ws-text grey-bg">
+				<div class="work-ws-text service-opt grey-bg">
 					<div class="">
 						<h2>What we can do</h2>
 						<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue .Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non velit sit amet ante pellentesque egestas a id sapien. Nunc et posuere mi. Proin eget molestie ipsum. Curabitur eget dignissim est, eget venenatis tortor. Mauris molestie convallis mi, et posuere libero ultricies eget. Vestibulum et imperdiet libero.</p>
@@ -147,16 +147,16 @@
 						</ul>
 					</div>
 				</div>
-				<div class="form grey-bg booking-form">
+				<div class="form grey-bg booking-form wws-form">
 					<legend>Get in touch</legend>
 			    	<form action="#" method="GET" name="">
 			    		<ul>
 			    			<li>
-			    				<label>First Name</label>
+			    				<label class="required">First Name</label>
 			    				<input type="text" name="name">
 			    			</li>
 			    			<li>
-			    				<label>Second Name</label>
+			    				<label class="required">Second Name</label>
 			    				<input type="text" name="name">
 			    			</li>
 			    			<li>
@@ -164,15 +164,15 @@
 			    				<input type="text" name="phone">
 			    			</li>
 			    			<li>
-			    				<label>Email address</label>
+			    				<label class="required">Email address</label>
 			    				<input type="text" name="email">
 			    			</li>
 			    			<li>
-			    				<label>Business Name (if applicable)</label>
+			    				<label class="required">Business Name (if applicable)</label>
 			    				<input type="text" name="name">
 			    			</li>
-			    			<li>
-			    				<label>Enquiry Notes</label>
+			    			<li class="textarea">
+			    				<label class="required">Enquiry Notes</label>
 			    				<textarea name="message" rows="5" cols="25"></textarea>
 			    			</li>
 			    			<li>
@@ -253,6 +253,13 @@
 				closeEffect	: 'none'
 			});
 		});
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				$('nav#nav').mmenu({
+					position : "right"
+				});
+			});
 		</script>
 	</body>
 </html>

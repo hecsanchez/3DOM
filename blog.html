@@ -98,7 +98,7 @@
 			          <li><a href="gallery.html">Gallery</a></li>
 			          <li><a href="case-studies.html" >Case Studies</a></li>
 			          <li><a href="pricing.html">Pricing</a></li>
-			          <li><a href="blog.html">Blog</a></li>
+			          <li><a class="selected" href="blog.html">Blog</a></li>
 			          <li><a href="contact.html">Contact</a></li>
 			          <li class="featured-link"><a href="shop.html">Shop</a>
 			          		<ul class="sub-nav">
@@ -131,11 +131,12 @@
 					</div>
 				</div>
 			</section>
-			<section class="gs-container fb">
+			<section class="gs-container fb latest-search">
 				<div class="top-title">Latest<span class="top-title-red">Blogs</span></div>
-				 <form class="" method="get" action="search">
-					  <input type="text" class="tftextinput" name="q" size="21" maxlength="120" placeholder="Search Blogs">
-					  <input type="submit" value="search" class="button button--search">
+				 <form class="search-blogs" method="get" action="search">
+				 	  <div class="holder">Search<span class="red">Blogs</span></div>
+					  <input id="searchInput" type="text" class="tftextinput" name="q" size="21" maxlength="120">
+					  <input type="submit" value="Search" class="button button--search">
 				</form>
 			</section>
 			<section class="gs-container latest-blogs fb">
@@ -172,11 +173,10 @@
 			</section>
 			<section class="gs-container">
 				<h2 class="top-title">Recent<span class="top-title-red">Blogs</span></h2>
-			</section>
-			<section class="gs-container fb">
+				<div class="recent-blogs fb">
 					<div class="recent-blog-single grey-bg">
 						<div class="">
-							<img src="img/recent-blog.jpg" alt="">
+							<a href="blog-selected.html"><img src="img/recent-blog.jpg" alt=""></a>
 						</div>
 						<div class="blog-single__content">
 								<div class="blog-header"><a href="blog-selected.html">Blog headline</a></div>
@@ -189,7 +189,7 @@
 					</div>
 					<div class="recent-blog-single grey-bg">
 						<div class="">
-							<img src="img/recent-blog.jpg" alt="">
+							<a href="blog-selected.html"><img src="img/recent-blog.jpg" alt=""></a>
 						</div>
 						<div class="blog-single__content">
 								<div class="blog-header"><a href="blog-selected.html">Blog headline</a></div>
@@ -202,7 +202,7 @@
 					</div>
 					<div class="recent-blog-single grey-bg">
 						<div class="">
-							<img src="img/recent-blog.jpg" alt="">
+							<a href="blog-selected.html"><img src="img/recent-blog.jpg" alt=""></a>
 						</div>
 						<div class="blog-single__content">
 								<div class="blog-header"><a href="blog-selected.html">Blog headline</a></div>
@@ -215,22 +215,7 @@
 					</div>
 					<div class="recent-blog-single grey-bg">
 						<div class="">
-							<img src="img/recent-blog.jpg" alt="">
-						</div>
-						<div class="blog-single__content">
-								<div class="blog-header"><a href="blog-selected.html">Blog headline</a></div>
-								<div class="">05.05.2014</div>
-								<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit,  </p>
-						</div>
-						<div class="">
-							<a href="blog-selected.html" class="blog-link">Read more</a>
-						</div>
-					</div>
-			</section>
-			<section class="gs-container fb">
-					<div class="recent-blog-single grey-bg">
-						<div class="">
-							<img src="img/recent-blog.jpg" alt="">
+							<a href="blog-selected.html"><img src="img/recent-blog.jpg" alt=""></a>
 						</div>
 						<div class="blog-single__content">
 								<div class="blog-header"><a href="blog-selected.html">Blog headline</a></div>
@@ -243,7 +228,7 @@
 					</div>
 					<div class="recent-blog-single grey-bg">
 						<div class="">
-							<img src="img/recent-blog.jpg" alt="">
+							<a href="blog-selected.html"><img src="img/recent-blog.jpg" alt=""></a>
 						</div>
 						<div class="blog-single__content">
 								<div class="blog-header"><a href="blog-selected.html">Blog headline</a></div>
@@ -256,7 +241,7 @@
 					</div>
 					<div class="recent-blog-single grey-bg">
 						<div class="">
-							<img src="img/recent-blog.jpg" alt="">
+							<a href="blog-selected.html"><img src="img/recent-blog.jpg" alt=""></a>
 						</div>
 						<div class="blog-single__content">
 								<div class="blog-header"><a href="blog-selected.html">Blog headline</a></div>
@@ -269,7 +254,7 @@
 					</div>
 					<div class="recent-blog-single grey-bg">
 						<div class="">
-							<img src="img/recent-blog.jpg" alt="">
+							<a href="blog-selected.html"><img src="img/recent-blog.jpg" alt=""></a>
 						</div>
 						<div class="blog-single__content">
 								<div class="blog-header"><a href="blog-selected.html">Blog headline</a></div>
@@ -280,6 +265,20 @@
 							<a href="blog-selected.html" class="blog-link">Read more</a>
 						</div>
 					</div>
+					<div class="recent-blog-single grey-bg">
+						<div class="">
+							<a href="blog-selected.html"><img src="img/recent-blog.jpg" alt=""></a>
+						</div>
+						<div class="blog-single__content">
+								<div class="blog-header"><a href="blog-selected.html">Blog headline</a></div>
+								<div class="">05.05.2014</div>
+								<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit,  </p>
+						</div>
+						<div class="">
+							<a href="blog-selected.html" class="blog-link">Read more</a>
+						</div>
+					</div>
+				</div>
 			</section>
 			<section class="gs-container section--hot-products dark-bg fb">
 				<div class="highlight">
@@ -372,8 +371,20 @@
 
 		  });
 		});
+		$(function() {
+		    $(".holder + input").keyup(function() {
+		        if($(this).val().length) {
+		            $(this).prev('.holder').hide();
+		        } else {
+		            $(this).prev('.holder').show();
+		        }
+		    });
+		    $(".holder").click(function() {
+		        $(this).next().focus();
+		    });
+		});
 		</script>
-				<script type="text/javascript">
+		<script type="text/javascript">
 			$(function() {
 				$('nav#nav').mmenu({
 					position : "right"

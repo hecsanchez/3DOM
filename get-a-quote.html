@@ -10,10 +10,11 @@
 	    <link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 	    <link rel="stylesheet" href="css/owl.transitions.css">
 	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 		<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
 		<script type="text/javascript" src="js/owl.carousel.js"></script>
 		<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
-
+		<script type="text/javascript" src="js/kendo.min.js" ></script>
 	  </head>
 	<body>
 		<div>
@@ -132,7 +133,7 @@
 				</div>
 			</section>
 			<section class="gs-container fb">
-				<div class="a-quote grey-bg">
+				<div class="a-quote grey-bg about-booking">
 					<h2>About our quotes</h2>
 					<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue .Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non velit sit amet ante pellentesque egestas a id sapien. Nunc et posuere mi. Proin eget molestie ipsum. Curabitur eget dignissim est, eget venenatis tortor. Mauris molestie convallis mi, et posuere libero ultricies eget. Vestibulum et imperdiet libero.</p>
 				</div>
@@ -141,7 +142,7 @@
 					<legend>Create your quote</legend>
 					<ul>
 						<li>
-							<label>Select service</label>
+							<label class="required">Select service</label>
 					    		<select>
 					    			<option>A</option>
 					    			<option>B</option>
@@ -151,35 +152,37 @@
 					    		</select>
 						</li>
 						<li>
-		    				<label>First Name</label>
+		    				<label class="required">First Name</label>
 		    				<input type="text" name="name">
 		    			</li>
 		    			<li>
-		    				<label>Second Name</label>
+		    				<label class="required">Second Name</label>
 		    				<input type="text" name="name">
 		    			</li>
 		    			<li>
-		    				<label>Telephone number</label>
+		    				<label>Phone number</label>
 		    				<input type="text" name="phone">
 		    			</li>
 		    			<li>
-		    				<label>Email address</label>
+		    				<label class="required">Email address</label>
 		    				<input type="text" name="email">
 		    			</li>
 						<li class="postcode">
-				    		<label>Postcode<br>Let us find a supplier near you</label>
+				    		<label class="required">Postcode<br>Let us find a supplier near you</label>
 				    		<input type="text" name="name">
 						</li>
 						<li>
-							<label>Preferred date(s)</label>
-				    		<input type="datetime-local" name="time" class="date"><span>to</span><input type="datetime-local" name="time" class="date">
-						</li>
-						<li class="booking-form-text">
-							<label>Service requirement</label>
+			    				<label class="required">Preferred date(s)</label>
+			    				<div class="date-container">
+				    				<input type="text" id="datepicker"><span>to</span><input type="text" id="datepicker2">
+				    			</div>
+			    			</li>
+						<li class="booking-form-text textarea">
+							<label>Quote requirement</label>
 				    		<textarea name="message" rows="5" cols="25"></textarea>
 						</li>
 						<li>
-							<label>Select vehicle make</label>
+							<label class="required">Select vehicle make</label>
 					    		<select>
 					    			<option>A</option>
 					    			<option>B</option>
@@ -189,7 +192,7 @@
 					    		</select>
 						</li>
 						<li>
-							<label>Select vehicle model</label>
+							<label class="required">Select vehicle model</label>
 					    		<select>
 					    			<option>A</option>
 					    			<option>B</option>
@@ -202,7 +205,7 @@
 					    	<input type="submit" value="Get a quote" class="booking-submit">
 				    	 </li> 
 					</ul>
-					</form>
+				</form>
 				</div>
 			</section>
 			<section class="gs-container section--hot-products dark-bg fb">
@@ -286,6 +289,22 @@
 				closeEffect	: 'none'
 			});
 		});
+		$(function() {
+		    $( "#datepicker" ).datepicker();
+		  });
+		$(function() {
+		    $( "#datepicker2" ).datepicker();
+		  });
+		$('select').kendoDropDownList();
+		var size = $("#").data("kendoDropDownList");
 		</script>
+				<script type="text/javascript">
+			$(function() {
+				$('nav#nav').mmenu({
+					position : "right"
+				});
+			});
+		</script>
+	</div>
 	</body>
 </html>

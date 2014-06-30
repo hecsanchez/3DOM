@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+	<head>
 	  	<meta charset="utf-8">
 	    <title>3DOM Wraps</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,10 +10,11 @@
 	    <link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 	    <link rel="stylesheet" href="css/owl.transitions.css">
 	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 		<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
 		<script type="text/javascript" src="js/owl.carousel.js"></script>
 		<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
-
+		<script type="text/javascript" src="js/kendo.min.js" ></script>
 	  </head>
 	<body>
 		<div>
@@ -119,30 +120,29 @@
 			  </div>
 			<div>
 		</header>
-	<div class="l-main">
-		<div class="gs-container breadcrumbs">
-			<a href="index.html"><span>Home</span></a> | <span>Get a quote</span>
-		</div>
-		<section class="gs-container grey-bg">
-			<div class="top-content-box">
-				<div class="top-title">Get a<span class="top-title-red">Quote</span></div>
-				<div class="">
+		<div class="l-main">
+			<div class="gs-container breadcrumbs">
+				<a href="index.html"><span>Home</span></a> | <span>Get a quote</span>
+			</div>
+			<section class="gs-container grey-bg">
+				<div class="top-content-box">
+					<div class="top-title">Get a<span class="top-title-red">Quote</span></div>
+					<div class="">
+						<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue .Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non velit sit amet ante pellentesque egestas a id sapien. Nunc et posuere mi. Proin eget molestie ipsum. Curabitur eget dignissim est, eget venenatis tortor. Mauris molestie convallis mi, et posuere libero ultricies eget. Vestibulum et imperdiet libero.</p>
+					</div>
+				</div>
+			</section>
+			<section class="gs-container fb">
+				<div class="a-quote grey-bg about-booking">
+					<h2>About our quotes</h2>
 					<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue .Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non velit sit amet ante pellentesque egestas a id sapien. Nunc et posuere mi. Proin eget molestie ipsum. Curabitur eget dignissim est, eget venenatis tortor. Mauris molestie convallis mi, et posuere libero ultricies eget. Vestibulum et imperdiet libero.</p>
 				</div>
-			</div>
-		</section>
-		<section class="gs-container fb">
-			<div class="a-quote grey-bg about-booking">
-				<h2>About our quotes</h2>
-				<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue .Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non velit sit amet ante pellentesque egestas a id sapien. Nunc et posuere mi. Proin eget molestie ipsum. Curabitur eget dignissim est, eget venenatis tortor. Mauris molestie convallis mi, et posuere libero ultricies eget. Vestibulum et imperdiet libero.</p>
-			</div>
-			<div class="form grey-bg booking-form">
+				<div class="form grey-bg booking-form">
 					<form action="#" method="GET" name="">
 					<legend>Create your quote</legend>
-					<p>Already a member?<a href="">Sign in</a> for a custom quote.Not a member?Want to sign up?<a href="">Click here</a>
 					<ul>
 						<li>
-							<label>Select service</label>
+							<label class="required">Select service</label>
 					    		<select>
 					    			<option>A</option>
 					    			<option>B</option>
@@ -152,11 +152,11 @@
 					    		</select>
 						</li>
 						<li>
-		    				<label>First Name</label>
+		    				<label class="required">First Name</label>
 		    				<input type="text" name="name">
 		    			</li>
 		    			<li>
-		    				<label>Second Name</label>
+		    				<label class="required">Second Name</label>
 		    				<input type="text" name="name">
 		    			</li>
 		    			<li>
@@ -164,23 +164,25 @@
 		    				<input type="text" name="phone">
 		    			</li>
 		    			<li>
-		    				<label>Email address</label>
+		    				<label class="required">Email address</label>
 		    				<input type="text" name="email">
 		    			</li>
 						<li class="postcode">
-				    		<label>Postcode<br>Let us find a supplier near you</label>
+				    		<label class="required">Postcode<br>Let us find a supplier near you</label>
 				    		<input type="text" name="name">
 						</li>
 						<li>
-							<label>Preferred date(s)</label>
-				    		<input type="datetime-local" name="time" class="date"><span>to</span><input type="datetime-local" name="time" class="date">
-						</li>
-						<li class="booking-form-text">
-							<label>Service requirement</label>
+			    				<label class="required">Preferred date(s)</label>
+			    				<div class="date-container">
+				    				<input type="text" id="datepicker"><span>to</span><input type="text" id="datepicker2">
+				    			</div>
+			    			</li>
+						<li class="booking-form-text textarea">
+							<label class="required">Service requirement</label>
 				    		<textarea name="message" rows="5" cols="25"></textarea>
 						</li>
 						<li>
-							<label>Select vehicle</label>
+							<label class="required">Select vehicle</label>
 					    		<select>
 					    			<option>A</option>
 					    			<option>B</option>
@@ -195,8 +197,8 @@
 					</ul>
 				</form>
 				</div>
-		</section>
-		<section class="gs-container section--hot-products dark-bg fb">
+			</section>
+			<section class="gs-container section--hot-products dark-bg fb">
 				<div class="highlight">
 					<h2>Hot products</h2>
 					<div class="">
@@ -216,39 +218,42 @@
 					<a href="#"><img src="img/hotp3.png" alt="Product 3"></a>
 				</div>
 			</section><!-- End section-hotProducts -->
-		<section class="gs-container">
+			<section class="gs-container">
 			<div class="fb">
 				<div class="grey-bg partners">
 					<h2>Our partners</h2>
 					<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue .</p>
-					<a href=""><img src="" alt=""></a>
-					<a href=""><img src="" alt=""></a>
-					<a href=""><img src="" alt=""></a>
-					<a href=""><img src="" alt=""></a>
+					<div class="partners__images">
+						<a href=""><img src="img/bookingPartner1.png" alt=""></a>
+						<a href=""><img src="img/bookingPartner2.png" alt=""></a>
+						<a href=""><img src="img/bookingPartner3.png" alt=""></a>
+						<a href=""><img src="img/bookingPartner4.png" alt=""></a>
+					</div>
 				</div>
-				<div class="grey-bg fb">
-					<div class="">
-						<h2>From the blog</h2>
-						<div class="">
-							<div class="">Blog header or title</div>
+				<div class="grey-bg booking-blog">
+					<h2>From the blog</h2>
+					<div class=" fb">
+					
+						<div class="blog-single--booking">
+							<div class="blog-header">Blog header or title</div>
 							<div class="">21.04.2014</div>
 							<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue .</p>
-							<a href="#">Read full article</a>
+							<a class="blog-link" href="#">Read full article</a>
 						</div>
-					</div>
-					<div class="">
-						<div class="">
-							<div class="">Blog header or title</div>
+						<div class="blog-single--booking">
+							<div class="blog-header">Blog header or title</div>
 							<div class="">21.04.2014</div>
 							<p>Nulla egestas placerat orci, sit amet lacinia neque gravida sit amet. Ut est elit, ornare et suscipit sed, aliquam in urna. Donec eleifend purus tellus, vel pulvinar nibh blandit eu. Maecenas ante elit, varius nec nulla sit amet, pulvinar congue .</p>
-							<a href="#">Read full article</a>
+							<a class="blog-link" href="#">Read full article</a>
 						</div>
-						<a href="#">View all the blogs</a>
+						
+						
 					</div>
+						<a class="button" ref="#">View all the blogs</a>
 				</div>
 			</div>
 		</section>
-		<section class="section--social-media">
+			<section class="section--social-media">
 				<div class="gs-container fb">
 					<a href="https://twitter.com/"><i class="icon-twitter"></i></a>
 					<a href="https://www.facebook.com/"><i class="icon-facebook"></i></a>
@@ -265,8 +270,8 @@
 					<a href=""><i class="oz-racing"></i></a>
 				</div>
 			</section><!-- End section-sponsors -->
-	</div>
-	<footer class="l-footer u-cf">
+		</div>
+		<footer class="l-footer u-cf">
 			<div class="gs-container footer-fb">
 				<div class="footer-red"></div>
 				<div class="footer-logo">
@@ -308,6 +313,22 @@
 				closeEffect	: 'none'
 			});
 		});
+		$(function() {
+		    $( "#datepicker" ).datepicker();
+		  });
+		$(function() {
+		    $( "#datepicker2" ).datepicker();
+		  });
+		$('select').kendoDropDownList();
+		var size = $("#").data("kendoDropDownList");
 		</script>
-</body>
+				<script type="text/javascript">
+			$(function() {
+				$('nav#nav').mmenu({
+					position : "right"
+				});
+			});
+		</script>
+	</div>
+	</body>
 </html>

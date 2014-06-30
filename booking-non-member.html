@@ -10,10 +10,11 @@
 	    <link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 	    <link rel="stylesheet" href="css/owl.transitions.css">
 	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 		<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
 		<script type="text/javascript" src="js/owl.carousel.js"></script>
 		<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
-
+		<script type="text/javascript" src="js/kendo.min.js" ></script>
 	  </head>
 	<body>
 		<div>
@@ -139,10 +140,10 @@
 				<div class="form grey-bg booking-form">
 					<form action="#" method="GET" name="">
 					<legend>Create your quote</legend>
-					<p>Already a member?<a href="">Sign in</a> for a custom quote.Not a member?Want to sign up?<a href="">Click here</a>
+					<p class="booking-form__intro">Already a member? <a href="">Sign in</a> for a custom quote. Not a member? Want to sign up? <a href="">Click here</a>
 					<ul>
 						<li>
-							<label>Select service</label>
+							<label class="required">Select service</label>
 					    		<select>
 					    			<option>A</option>
 					    			<option>B</option>
@@ -152,11 +153,11 @@
 					    		</select>
 						</li>
 						<li>
-		    				<label>First Name</label>
+		    				<label class="required">First Name</label>
 		    				<input type="text" name="name">
 		    			</li>
 		    			<li>
-		    				<label>Second Name</label>
+		    				<label class="required">Second Name</label>
 		    				<input type="text" name="name">
 		    			</li>
 		    			<li>
@@ -164,23 +165,25 @@
 		    				<input type="text" name="phone">
 		    			</li>
 		    			<li>
-		    				<label>Email address</label>
+		    				<label class="required">Email address</label>
 		    				<input type="text" name="email">
 		    			</li>
 						<li class="postcode">
-				    		<label>Postcode<br>Let us find a supplier near you</label>
+				    		<label class="required">Postcode<br>Let us find a supplier near you</label>
 				    		<input type="text" name="name">
 						</li>
 						<li>
-							<label>Preferred date(s)</label>
-				    		<input type="datetime-local" name="time" class="date"><span>to</span><input type="datetime-local" name="time" class="date">
-						</li>
-						<li class="booking-form-text">
+			    				<label class="required">Preferred date(s)</label>
+			    				<div class="date-container">
+				    				<input type="text" id="datepicker"><span>to</span><input type="text" id="datepicker2">
+				    			</div>
+			    			</li>
+						<li class="booking-form-text textarea">
 							<label>Quote requirement</label>
 				    		<textarea name="message" rows="5" cols="25"></textarea>
 						</li>
 						<li>
-							<label>Select make</label>
+							<label class="required">Select make</label>
 					    		<select>
 					    			<option>A</option>
 					    			<option>B</option>
@@ -190,7 +193,7 @@
 					    		</select>
 						</li>
 						<li>
-							<label>Select model</label>
+							<label class="required">Select model</label>
 					    		<select>
 					    			<option>A</option>
 					    			<option>B</option>
@@ -287,6 +290,22 @@
 				closeEffect	: 'none'
 			});
 		});
+		$(function() {
+		    $( "#datepicker" ).datepicker();
+		  });
+		$(function() {
+		    $( "#datepicker2" ).datepicker();
+		  });
+		$('select').kendoDropDownList();
+		var size = $("#").data("kendoDropDownList");
 		</script>
+				<script type="text/javascript">
+			$(function() {
+				$('nav#nav').mmenu({
+					position : "right"
+				});
+			});
+		</script>
+	</div>
 	</body>
 </html>
