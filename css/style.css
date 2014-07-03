@@ -7271,7 +7271,6 @@ color: #d9251c;
 .main-d {
 	background-color: #444444;
 	font-size: 26px;
-	width:940px;
 	height:50px;
 
 }
@@ -7282,18 +7281,19 @@ color: #d9251c;
 
 .nav-d ul {
 	list-style: none;
+	justify-content: flex-start;
 	display: flex;
+	padding-left: 0;
 } 
 
 .nav-d {
-	justify-content: flex-start;
 	padding: 0px;
-	width: 940px;
-	height: 35px;
 }
 
-
-
+.red-bg .nav-d ul li {
+	padding: 7px 2em;
+	border-right: 1px solid #fff;
+}
 
 
 
